@@ -17,7 +17,7 @@ export function Welcome() {
     return (
     <View className="flex-1 items-center justify-center">
         <View>
-        <TouchableOpacity className='text-center items-center justify-center'
+        <TouchableOpacity className='text-center items-center justify-center bg-black'
             onPress={openScreenLogin}>
             <Text>
                 Login
