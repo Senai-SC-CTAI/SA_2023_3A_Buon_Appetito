@@ -1,4 +1,4 @@
-- ##Yuri
+##Yuri
 #Gerenciar Aluno
 
 - [ ] - O aluno poderá visualizar o cardápio do dia
