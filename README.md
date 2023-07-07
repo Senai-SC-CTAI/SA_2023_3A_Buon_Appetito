@@ -1,12 +1,12 @@
 ##Yuri
 #Gerenciar Aluno
 
-- [] - O aluno poderá visualizar o cardápio do dia
-- [] - O aluno poderá visualizar o cardápio da semana
-- [] - Poderá filtrar entre alimentos e bebidas
-- [] - O aluno poderá autenticar com e-mail institucional no sistema
-- [] - O aluno poderá fornecer sugestões ou feedback no cardápio
-- [] - O aluno poderá realizar uma compra antecipada dos produtos
+- [ ] - O aluno poderá visualizar o cardápio do dia
+- [ ] - O aluno poderá visualizar o cardápio da semana
+- [ ] - Poderá filtrar entre alimentos e bebidas
+- [ ] - O aluno poderá autenticar com e-mail institucional no sistema
+- [ ] - O aluno poderá fornecer sugestões ou feedback no cardápio
+- [ ] - O aluno poderá realizar uma compra antecipada dos produtos
 
 Gerenciar Gerente
 // gerente será cadastrado pelo programador
