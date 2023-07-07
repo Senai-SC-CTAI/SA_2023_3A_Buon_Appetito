@@ -1,6 +1,5 @@
 <h1>Yuri</h1>
 <h3>Gerenciar Aluno</h3>
-
 - [ ] - O aluno poderá visualizar o cardápio do dia
 - [ ] - O aluno poderá visualizar o cardápio da semana
 - [ ] - Poderá filtrar entre alimentos e bebidas
@@ -8,7 +7,7 @@
 - [ ] - O aluno poderá fornecer sugestões ou feedback no cardápio
 - [ ] - O aluno poderá realizar uma compra antecipada dos produtos
 
-Gerenciar Gerente
+<h3>Gerenciar Gerente</h3>
 // gerente será cadastrado pelo programador
 - [ ] - O gerente poderá autenticar na aplicação
 - [ ] - O gerente poderá visualizar os dados cadastrados
@@ -25,15 +24,14 @@ Gerenciar Gerente
 - [ ] - O gerente poderá visualizar o quantitativa de produtos ofertados 
 - [ ] - O gerente poderá customizar um filtro para a busca do quantitativo dos produtos
 
-Gerenciar Funcionários e Gerente
+<h3>Gerenciar Funcionários e Gerente</h3>
 - [ ] - O funcionário poderá cadastrar um produto
 - [ ] - O funcionário poderá listar todos os produtos cadastrados
 - [ ] - O funcionário poderá visualizar um único produto 
 - [ ] - O funcionário poderá excluir um produto cadastrado
 - [ ] - O funcionário poderá editar um produto cadastrado
 
-##Valentina
-#Gerenciar Produto
-
+<h1>Valentina</h1>
+<h3>Gerenciar Produto</h3>
 - [ ] - O produto deverá conter seu preço no cardápio
 - [ ] - O produto deverá conter suas informações nutricionais no cardápio
