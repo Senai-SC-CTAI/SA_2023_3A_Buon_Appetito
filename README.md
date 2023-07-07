@@ -1,5 +1,5 @@
 <h1>Yuri</h1>
-<h2>Gerenciar Aluno</h2>
+<h3>Gerenciar Aluno</h3>
 
 - [ ] - O aluno poderá visualizar o cardápio do dia
 - [ ] - O aluno poderá visualizar o cardápio da semana
