@@ -1,8 +1,8 @@
 ##Yuri
 #Gerenciar Aluno
 
-[] - O aluno poderá visualizar o cardápio do dia
-[] - O aluno poderá visualizar o cardápio da semana
+- [] - O aluno poderá visualizar o cardápio do dia
+- [] - O aluno poderá visualizar o cardápio da semana
 [] - Poderá filtrar entre alimentos e bebidas
 [] - O aluno poderá autenticar com e-mail institucional no sistema
 [] - O aluno poderá fornecer sugestões ou feedback no cardápio
