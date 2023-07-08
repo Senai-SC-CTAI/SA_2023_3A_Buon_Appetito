@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, TouchableOpacity, Text} from 'react-native';
+import { View, TouchableOpacity, Text} from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
@@ -12,29 +12,13 @@ export function Login() {
     }
   
     return (
-    <View style={styles.container}>
-        <TouchableOpacity style={styles.btn}
+    <View className="flex-1 items-center justify-center">
+        <TouchableOpacity className='text-center items-center justify-center'
             onPress={openScreen}>
-            <Text style={styles.btn_text}>
+            <Text>
                 Login
             </Text>
         </TouchableOpacity>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#fff",
-        justifyContent: "center",
-        alignItems: 'center'
-    },
-    btn: {
-
-    },
-    btn_text: {
-
-    }
-    
-})
