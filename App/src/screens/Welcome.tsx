@@ -16,6 +16,7 @@ export function Welcome() {
   
     return (
     <View className=''>
+
         <View>
             <Image className='' 
             source={require('../../assets/header-welcome.png')} 
@@ -48,6 +49,7 @@ export function Welcome() {
                         Login
                     </Text>
                 </TouchableOpacity>
+                
             </View>
         </View>
     </View>
