@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, TouchableOpacity, Text} from 'react-native';
+import { View, TouchableOpacity, Text, Image} from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
@@ -15,38 +15,41 @@ export function Welcome() {
     }
   
     return (
-    <View className="flex-1 items-center justify-center">
+    <View className=''>
         <View>
-        <TouchableOpacity className='text-center items-center justify-center'
-            onPress={openScreenLogin}>
-            <Text>
-                Login
-            </Text>
-        </TouchableOpacity>
+            <Image className='' 
+            source={require('../../assets/header-welcome.png')} 
+            />
+        </View>
 
-        <TouchableOpacity
-            onPress={openScreenRegister}>
-            <Text>
-                Register
+        <View className='text-center items-center justify-center mt-10 mx-[10%]'>
+            <View className='border-b border-[#743C34] pb-3'>
+                <Text className='text-[50px]'>
+                    Buon Appetito
+                </Text>
+            </View>
+
+            <Text className='text-center mt-6 text-base font-light'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae augue ipsum. 
+            Curabitur sed auctor urna. Nam ut nulla in leo vulputate interdum.
             </Text>
-        </TouchableOpacity>
+
+            <View className='gap-6 mt-14'>
+                <TouchableOpacity className='text-center items-center justify-center px-28 py-3 bg-[#402218] rounded-[10px]'
+                    onPress={openScreenRegister}>
+                    <Text className='text-white font-medium text-lg'>
+                        Register
+                    </Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity className='text-center items-center justify-center px-28 py-3 bg-[#BEA497] rounded-[10px]'
+                    onPress={openScreenLogin}>
+                    <Text className='text-white font-medium text-lg'>
+                        Login
+                    </Text>
+                </TouchableOpacity>
+            </View>
         </View>
     </View>
   );
 }
-
-// const styles = StyleSheet.create({
-//     // container: {
-//     //     flex: 1,
-//     //     backgroundColor: "#fff",
-//     //     justifyContent: "center",
-//     //     alignItems: 'center'
-//     // },
-//     btn: {
-
-//     },
-//     btn_text: {
-
-//     }
-    
-// })
