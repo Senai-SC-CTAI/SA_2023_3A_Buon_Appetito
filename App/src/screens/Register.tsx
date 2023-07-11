@@ -3,7 +3,7 @@ import { View, TouchableOpacity, Text, Image, TextInput} from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
-import CheckboxWithText from '../components/CheckboxWithText';
+import CheckboxWithText from '../Components/Register/CheckboxWithText';
 
 export function Register() {
     const navigation = useNavigation();
@@ -32,7 +32,7 @@ export function Register() {
                 </Text>
 
                 <View className='gap-7 mt-7'>
-                    <View className='py-3 border-b border-[#D5D5D5] w-[285px]'>
+                    <View className='py-3 border-b border-[#D5D5D5] w-[285px] transition-colors duration-200 ease-in-out hover:border-[#6E07F3]'>
                         <TextInput className='text-[18px]'
                         placeholder='Nome Completo'>
                         </TextInput>
