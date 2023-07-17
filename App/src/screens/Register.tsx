@@ -3,7 +3,7 @@ import { View, TouchableOpacity, Text, Image, TextInput} from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
-import CheckboxWithText from '../Components/Register/CheckboxWithText';
+import CheckboxWithText from '../Components/CheckboxWithText';
 
 export function Register() {
     const navigation = useNavigation();
