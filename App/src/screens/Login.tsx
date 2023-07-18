@@ -60,7 +60,7 @@ export function Login() {
                 </View>
 
                 <View>
-                    <TouchableOpacity className='mt-5 text-center items-center justify-center px- py-3 bg-[#743C34] rounded-[10px]'
+                    <TouchableOpacity className='mt-5 text-center items-center justify-center px-24 py-2 bg-[#743C34] rounded-[10px]'
                         onPress={openScreen}>
                         <Text className='text-white font-medium text-lg'>
                             Entrar

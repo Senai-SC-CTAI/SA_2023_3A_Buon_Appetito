@@ -31,7 +31,7 @@ export function Register() {
                     Cadastro
                 </Text>
 
-                <View className='gap-7 mt-7'>
+                <View className='gap-4 mt-7'>
                     <View className='py-3 border-b border-[#D5D5D5] w-[285px] transition-colors duration-200 ease-in-out hover:border-[#6E07F3]'>
                         <TextInput className='text-[18px]'
                         placeholder='Nome Completo'>
@@ -61,10 +61,12 @@ export function Register() {
                 </View>
             </View>
 
+            <View className='mt-6'>
             <CheckboxWithText />
+            </View>
 
             <View>
-                <TouchableOpacity className='mt-5 text-center items-center justify-center px- py-3 bg-[#743C34] rounded-[10px]'
+                <TouchableOpacity className='mt-6 text-center items-center justify-center px-24 py-2 bg-[#743C34] rounded-[10px]'
                     onPress={openScreen}>
                     <Text className='text-white font-medium text-lg'>
                         Criar

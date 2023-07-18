@@ -36,14 +36,14 @@ export function Welcome() {
             </Text>
 
             <View className='gap-6 mt-14'>
-                <TouchableOpacity className='text-center items-center justify-center px-28 py-3 bg-[#402218] rounded-[10px]'
+                <TouchableOpacity className='text-center items-center justify-center px-24 py-2 bg-[#402218] rounded-[10px]'
                     onPress={openScreenRegister}>
                     <Text className='text-white font-medium text-lg'>
-                        Register
+                        Cadastro
                     </Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity className='text-center items-center justify-center px-28 py-3 bg-[#BEA497] rounded-[10px]'
+                <TouchableOpacity className='text-center items-center justify-center px-24 py-2 bg-[#BEA497] rounded-[10px]'
                     onPress={openScreenLogin}>
                     <Text className='text-white font-medium text-lg'>
                         Login
