@@ -11,6 +11,9 @@ export function Login() {
     function openScreen(){
         navigation.navigate('home')
     }
+    function openScreen2(){
+        navigation.navigate('welcome')
+    }
   
     return (
         <View className="mx-auto flex-1 bg-[#F5EFEC]">
@@ -53,7 +56,8 @@ export function Login() {
                         <CheckboxWithText />
                     </View>
                     <View className='bg-gray-100'>
-                        <TouchableOpacity>
+                        <TouchableOpacity
+                            onPress={openScreen2}>
                             <Text className='text-[#743C34] text-[14px]'>Esqueceu a senha?</Text>
                         </TouchableOpacity>
                     </View>
