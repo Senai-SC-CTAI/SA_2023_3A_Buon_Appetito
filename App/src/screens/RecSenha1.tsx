@@ -1,18 +1,15 @@
 import React from 'react';
-import { View, TouchableOpacity, Text, Image, TextInput} from 'react-native';
+import { View, TouchableOpacity, Text, TextInput, Image} from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 import CheckboxWithText from '../Components/CheckboxWithText';
 
 
-export function Login() {
+export function RecSenha1() {
     const navigation = useNavigation();
   
     function openScreen(){
-        navigation.navigate('home')
-    }
-    function openScreen2(){
-        navigation.navigate('recsenha1')
+        navigation.navigate('recsenha2')
     }
   
     return (
@@ -31,7 +28,7 @@ export function Login() {
                 <View className='items-center justify-center mt-24'>
     
                     <Text className='font-medium text-[28px] mt-14'>
-                        Login
+                        Recuperar Senha
                     </Text>
     
                     <View className='gap-5 mt-3'>
@@ -50,24 +47,11 @@ export function Login() {
                         </View>
                     </View>
                 </View>
-
-                <View className='flex flex-row justify-between mt-6'>
-                    <View>
-                        <CheckboxWithText />
-                    </View>
-                    <View className='bg-gray-100'>
-                        <TouchableOpacity
-                            onPress={openScreen2}>
-                            <Text className='text-[#743C34] text-[14px]'>Esqueceu a senha?</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-
                 <View>
                     <TouchableOpacity className='mt-6 text-center items-center justify-center px-24 py-2 bg-[#743C34] rounded-[10px]'
                         onPress={openScreen}>
                         <Text className='text-white font-medium text-lg'>
-                            Entrar
+                            Próximo
                         </Text>
                     </TouchableOpacity>
                 </View>

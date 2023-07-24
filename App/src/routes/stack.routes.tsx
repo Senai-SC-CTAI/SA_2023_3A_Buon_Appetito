@@ -7,10 +7,10 @@ import { Register } from '../screens/Register';
 import { Welcome } from '../screens/Welcome';
 import { Home } from '../screens/Home';
 
-import { Passo1 } from '../screens/RecuperarSenha/Passo1';
-import { Passo2 } from '../screens/RecuperarSenha/Passo2';
-import { Passo3 } from '../screens/RecuperarSenha/Passo3';
-import { Passo4 } from '../screens/RecuperarSenha/Passo4';
+import { RecSenha1 } from '../screens/RecSenha1';
+import { RecSenha2 } from '../screens/RecSenha2';
+import { RecSenha3 } from '../screens/RecSenha3';
+import { RecSenha4 } from '../screens/RecSenha4';
 
 export function StackRoutes(){
     return(
@@ -52,36 +52,36 @@ export function StackRoutes(){
                 component={Home}
             />
             <Screen
-                name='passo1'
+                name='recsenha1'
                 options={{
-                    title: 'Passo1',
+                    title: 'RecSenha1',
                     headerShown: false
                 }}
-                component={Passo1}
+                component={RecSenha1}
             />
             <Screen
-                name='passo2'
+                name='recsenha2'
                 options={{
-                    title: 'Passo2',
+                    title: 'RecSenha2',
                     headerShown: false
                 }}
-                component={Passo2}
+                component={RecSenha2}
             />
             <Screen
-                name='passo3'
+                name='recsenha3'
                 options={{
-                    title: 'Passo3',
+                    title: 'RecSenha3',
                     headerShown: false
                 }}
-                component={Passo3}
+                component={RecSenha3}
             />
             <Screen
-                name='passo4'
+                name='recsenha4'
                 options={{
-                    title: 'Passo4',
+                    title: 'RecSenha4',
                     headerShown: false
                 }}
-                component={Passo4}
+                component={RecSenha4}
             />
         </Navigator>
     )

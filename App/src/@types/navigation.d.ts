@@ -5,10 +5,10 @@ export declare global{
             register: undefined;
             login: undefined;
             home: undefined;
-            passo1: undefined;
-            passo2: undefined;
-            passo3: undefined;
-            passo4: undefined;
+            recsenha1: undefined;
+            recsenha2: undefined;
+            recsenha3: undefined;
+            recsenha4: undefined;
         }
     }
 }
