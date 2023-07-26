@@ -26,11 +26,10 @@ export function RecSenha1() {
             </View> */}
             <View className='mx-[50px]'>
                 <View className='items-center justify-center mt-24'>
-    
-                    <Text className='font-medium text-[28px] mt-14'>
-                        Recuperar Senha
-                    </Text>
-    
+                    
+                        <Text className='font-medium text-[28px] mt-14'>
+                            Recuperar Senha
+                        </Text>
                     <View className='gap-5 mt-3'>
                         <View className='py-3 border-b border-[#D5D5D5] w-[285px]'>
                             <TextInput className='text-[18px]'

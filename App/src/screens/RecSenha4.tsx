@@ -28,7 +28,7 @@ export function RecSenha4() {
                 <View className='items-center justify-center mt-24'>
     
                     <Text className='font-medium text-[28px] mt-14'>
-                        Recuperar Senha
+                        Sua senha foi alterada com sucesso!
                     </Text>
     
                     <View className='gap-5 mt-3'>

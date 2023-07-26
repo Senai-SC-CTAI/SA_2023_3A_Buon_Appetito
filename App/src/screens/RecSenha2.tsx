@@ -26,26 +26,16 @@ export function RecSenha2() {
             </View> */}
             <View className='mx-[50px]'>
                 <View className='items-center justify-center mt-24'>
-    
-                    <Text className='font-medium text-[28px] mt-14'>
-                        Recuperar Senha
-                    </Text>
-    
-                    <View className='gap-5 mt-3'>
-                        <View className='py-3 border-b border-[#D5D5D5] w-[285px]'>
-                            <TextInput className='text-[18px]'
-                            placeholder='Email'>
-                            </TextInput>
-                        </View>
-    
-                        <View className='py-3 border-b border-[#D5D5D5] w-[285px]'>
-                            <TextInput className='text-[18px]'
-                            placeholder='Senha'
-                            secureTextEntry={true}>
-                            
-                            </TextInput>
-                        </View>
+
+                    <View className='text-center justify-center items-center'>
+                        <Text className='font-medium text-[28px] mt-14'>
+                            Recuperar Senha
+                        </Text>
+                        <Text className='text-lg mt-4 text-center text-[#515151] mx-[8]'>
+                            Digite o código que enviamos para o seu email
+                        </Text>
                     </View>
+    
                 </View>
                 <View>
                     <TouchableOpacity className='mt-6 text-center items-center justify-center px-24 py-2 bg-[#743C34] rounded-[10px]'
