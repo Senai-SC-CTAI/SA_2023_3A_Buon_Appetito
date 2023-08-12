@@ -2,15 +2,15 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const { Screen, Navigator} = createNativeStackNavigator();
 
-import { Login } from '../screens/Login';
-import { Register } from '../screens/Register';
-import { Welcome } from '../screens/Welcome';
-import { Home } from '../screens/Home';
+import { Login } from '../screens/Login/Login';
+import { Register } from '../screens/Register/Register';
+import { Welcome } from '../screens/Welcome/Welcome';
+import { Home } from '../screens/Home/Home';
 
-import { RecSenha1 } from '../screens/RecSenha1';
-import { RecSenha2 } from '../screens/RecSenha2';
-import { RecSenha3 } from '../screens/RecSenha3';
-import { RecSenha4 } from '../screens/RecSenha4';
+import { RecSenha1 } from '../screens/RecSenha/RecSenha1';
+import { RecSenha2 } from '../screens/RecSenha/RecSenha2';
+import { RecSenha3 } from '../screens/RecSenha/RecSenha3';
+import { RecSenha4 } from '../screens/RecSenha/RecSenha4';
 
 export function StackRoutes(){
     return(

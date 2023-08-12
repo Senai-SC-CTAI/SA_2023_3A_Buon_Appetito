@@ -3,7 +3,7 @@ import { View, TouchableOpacity, Text, Image, TextInput} from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
-import CheckboxWithText from '../Components/CheckboxWithText';
+import CheckboxWithText from '../../Components/CheckboxWithText';
 
 export function Register() {
     const navigation = useNavigation();
@@ -15,7 +15,7 @@ export function Register() {
     return (
     <View className="mx-auto flex-1 bg-[#F5EFEC]">
 
-        <Image className='mx-auto' source={require('../../assets/header-register.png')}/>
+        <Image className='mx-auto' source={require('../../../assets/header-register.png')}/>
 
         {/* <View className='relative'>
             <View className='absolute'>

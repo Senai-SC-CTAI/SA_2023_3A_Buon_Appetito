@@ -19,7 +19,7 @@ export function Welcome() {
 
         <View>
             <Image className='' 
-            source={require('../../assets/header-welcome.png')} 
+            source={require('../../../assets/header-welcome.png')} 
             />
         </View>
 

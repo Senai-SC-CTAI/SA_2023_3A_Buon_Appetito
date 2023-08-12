@@ -2,20 +2,20 @@ import React from 'react';
 import { View, TouchableOpacity, Text, TextInput, Image} from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
-import CheckboxWithText from '../Components/CheckboxWithText';
+import CheckboxWithText from '../../Components/CheckboxWithText';
 
 
-export function RecSenha1() {
+export function RecSenha4() {
     const navigation = useNavigation();
   
     function openScreen(){
-        navigation.navigate('recsenha2')
+        navigation.navigate('login')
     }
   
     return (
         <View className="mx-auto flex-1 bg-[#F5EFEC]">
     
-            <Image className='mx-auto' source={require('../../assets/header-register.png')}/>
+            <Image className='mx-auto' source={require('../../../assets/header-register.png')}/>
     
             {/* <View className='relative'>
                 <View className='absolute'>
@@ -26,10 +26,11 @@ export function RecSenha1() {
             </View> */}
             <View className='mx-[50px]'>
                 <View className='items-center justify-center mt-24'>
-                    
-                        <Text className='font-medium text-[28px] mt-14'>
-                            Recuperar Senha
-                        </Text>
+    
+                    <Text className='font-medium text-[28px] mt-14'>
+                        Sua senha foi alterada com sucesso!
+                    </Text>
+    
                     <View className='gap-5 mt-3'>
                         <View className='py-3 border-b border-[#D5D5D5] w-[285px]'>
                             <TextInput className='text-[18px]'

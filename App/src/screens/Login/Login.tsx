@@ -1,21 +1,24 @@
 import React from 'react';
-import { View, TouchableOpacity, Text, TextInput, Image} from 'react-native';
+import { View, TouchableOpacity, Text, Image, TextInput} from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
-import CheckboxWithText from '../Components/CheckboxWithText';
+import CheckboxWithText from '../../Components/CheckboxWithText';
 
 
-export function RecSenha3() {
+export function Login() {
     const navigation = useNavigation();
   
     function openScreen(){
-        navigation.navigate('recsenha4')
+        navigation.navigate('home')
+    }
+    function openScreen2(){
+        navigation.navigate('recsenha1')
     }
   
     return (
         <View className="mx-auto flex-1 bg-[#F5EFEC]">
     
-            <Image className='mx-auto' source={require('../../assets/header-register.png')}/>
+            <Image className='mx-auto' source={require('../../../assets/header-register.png')}/>
     
             {/* <View className='relative'>
                 <View className='absolute'>
@@ -28,7 +31,7 @@ export function RecSenha3() {
                 <View className='items-center justify-center mt-24'>
     
                     <Text className='font-medium text-[28px] mt-14'>
-                        Recuperar Senha
+                        Login
                     </Text>
     
                     <View className='gap-5 mt-3'>
@@ -47,11 +50,24 @@ export function RecSenha3() {
                         </View>
                     </View>
                 </View>
+
+                <View className='flex flex-row justify-between mt-6'>
+                    <View>
+                        <CheckboxWithText />
+                    </View>
+                    <View className='bg-gray-100'>
+                        <TouchableOpacity
+                            onPress={openScreen2}>
+                            <Text className='text-[#743C34] text-[14px]'>Esqueceu a senha?</Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+
                 <View>
                     <TouchableOpacity className='mt-6 text-center items-center justify-center px-24 py-2 bg-[#743C34] rounded-[10px]'
                         onPress={openScreen}>
                         <Text className='text-white font-medium text-lg'>
-                            Próximo
+                            Entrar
                         </Text>
                     </TouchableOpacity>
                 </View>
