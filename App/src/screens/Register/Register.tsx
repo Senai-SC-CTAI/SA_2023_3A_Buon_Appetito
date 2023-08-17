@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, TouchableOpacity, Text, Image, TextInput} from 'react-native';
 
+import style from './RegisterStyles'
+
 import { useNavigation } from '@react-navigation/native';
 
 import CheckboxWithText from '../../Components/CheckboxWithText';
