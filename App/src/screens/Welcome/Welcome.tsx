@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, TouchableOpacity, Text, Image} from 'react-native';
 
+import styles from './WelcomeStyles'
+
 import { useNavigation } from '@react-navigation/native';
 
 
@@ -15,15 +17,15 @@ export function Welcome() {
     }
   
     return (
-    <View className=''>
+    <View style={styles.main}>
 
-        <View>
-            <Image className='' 
+        <View >
+            <Image 
             source={require('../../../assets/header-welcome.png')} 
             />
         </View>
 
-        <View className='text-center items-center justify-center mt-10 mx-[10%]'>
+        <View  style={styles.container}>
             <View className='border-b border-[#743C34] pb-3'>
                 <Text className='text-[50px]'>
                     Buon Appetito

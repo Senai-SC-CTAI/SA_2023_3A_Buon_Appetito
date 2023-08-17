@@ -15,9 +15,6 @@ import { RecSenha4 } from '../screens/RecSenha/RecSenha4';
 export function StackRoutes(){
     return(
         <Navigator
-            /*screenOptions={{
-                headerShown: false
-            }}*/
         >
             <Screen
                 name='welcome'
