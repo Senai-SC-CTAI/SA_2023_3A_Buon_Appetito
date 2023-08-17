@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, TouchableOpacity, Text} from 'react-native';
 
+import styles from './HomeStyles'
+
 import { useNavigation } from '@react-navigation/native';
 
 
