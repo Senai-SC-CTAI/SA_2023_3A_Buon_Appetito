@@ -26,28 +26,28 @@ export function Welcome() {
         </View>
 
         <View  style={styles.container}>
-            <View className='border-b border-[#743C34] pb-3'>
-                <Text className='text-[50px]'>
+            <View style={styles.detalhe}>
+                <Text style={styles.titulo}>
                     Buon Appetito
                 </Text>
             </View>
 
-            <Text className='text-center mt-6 text-base font-light'>
+            <Text style={styles.descricao}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae augue ipsum. 
             Curabitur sed auctor urna. Nam ut nulla in leo vulputate interdum.
             </Text>
 
-            <View className='gap-6 mt-14'>
-                <TouchableOpacity className='text-center items-center justify-center px-24 py-2 bg-[#402218] rounded-[10px]'
+            <View style={styles.botoes}>
+                <TouchableOpacity style={styles.cadastro}
                     onPress={openScreenRegister}>
-                    <Text className='text-white font-medium text-lg'>
+                    <Text style={styles.cadastro_texto}>
                         Cadastro
                     </Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity className='text-center items-center justify-center px-24 py-2 bg-[#BEA497] rounded-[10px]'
+                <TouchableOpacity style={styles.login}
                     onPress={openScreenLogin}>
-                    <Text className='text-white font-medium text-lg'>
+                    <Text style={styles.login_texto}>
                         Login
                     </Text>
                 </TouchableOpacity>
