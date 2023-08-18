@@ -65,8 +65,6 @@ export function Register() {
 
             </View>
 
-            <CheckboxWithText />
-
             <View>
                 <TouchableOpacity style={styles.btn}
                     onPress={openScreen}>
