@@ -4,7 +4,8 @@ const WelcomeStyles = StyleSheet.create({
     main: {
         flex: 1,
         width: '100%',
-        height: '100%'
+        height: '100%',
+        alignItems: 'center',
     },
     container: {
         marginTop: 10,
@@ -16,7 +17,8 @@ const WelcomeStyles = StyleSheet.create({
         paddingBottom: 12
     },
     titulo: {
-        fontSize: 50
+        fontSize: 40,
+        textAlign: 'center'
     },
     descricao: {
         textAlign: 'center',

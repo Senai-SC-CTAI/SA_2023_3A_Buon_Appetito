@@ -14,6 +14,7 @@ const CheckboxWithText = () => {
       style={{
         flexDirection: 'row',
         alignItems: 'center',
+        marginTop: 24
       }}
       onPress={toggleCheckbox}
     >

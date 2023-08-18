@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, TouchableOpacity, Text, Image, TextInput} from 'react-native';
 
-import style from './RegisterStyles'
+import styles from './RegisterStyles'
 
 import { useNavigation } from '@react-navigation/native';
 
@@ -15,9 +15,9 @@ export function Register() {
     }
   
     return (
-    <View className="mx-auto flex-1 bg-[#F5EFEC]">
+    <View style={styles.main}>
 
-        <Image className='mx-auto' source={require('../../../assets/header-register.png')}/>
+        <Image source={require('../../../assets/header-register.png')}/>
 
         {/* <View className='relative'>
             <View className='absolute'>
@@ -26,51 +26,51 @@ export function Register() {
             </View>
             </View>
         </View> */}
-        <View className='mx-[50px]'>
-            <View className='items-center justify-center mt-10'>
+        
+        <View>
+            <View style={styles.container}>
 
-                <Text className='font-medium text-[28px] mt-14'>
+                <Text style={styles.titulo}>
                     Cadastro
                 </Text>
 
-                <View className='gap-4 mt-7'>
-                    <View className='py-3 border-b border-[#D5D5D5] w-[285px] transition-colors duration-200 ease-in-out hover:border-[#6E07F3]'>
-                        <TextInput className='text-[18px]'
+                <View style={styles.container_info}>
+                    <View style={styles.info_caixa}>
+                        <TextInput style={styles.info_caixa_text}
                         placeholder='Nome Completo'>
                         </TextInput>
                     </View>
 
-                    <View className='py-3 border-b border-[#D5D5D5] w-[285px]'>
-                        <TextInput className='text-[18px]'
+                    <View style={styles.info_caixa}>
+                        <TextInput style={styles.info_caixa_text}
                         placeholder='Email'>
                         </TextInput>
                     </View>
 
-                    <View className='py-3 border-b border-[#D5D5D5] w-[285px]'>
-                        <TextInput className='text-[18px]'
+                    <View style={styles.info_caixa}>
+                        <TextInput style={styles.info_caixa_text}
                         placeholder='Senha'
                         secureTextEntry={true}>
                         
                         </TextInput>
                     </View>
 
-                    <View className='py-3 border-b border-[#D5D5D5] w-[285px]'>
-                        <TextInput className='text-[18px]'
+                    <View style={styles.info_caixa}>
+                        <TextInput style={styles.info_caixa_text}
                         placeholder='Confirmar Senha'
                         secureTextEntry={true}>
                         </TextInput>
                     </View>
                 </View>
+
             </View>
 
-            <View className='mt-6'>
             <CheckboxWithText />
-            </View>
 
             <View>
-                <TouchableOpacity className='mt-6 text-center items-center justify-center px-24 py-2 bg-[#743C34] rounded-[10px]'
+                <TouchableOpacity style={styles.btn}
                     onPress={openScreen}>
-                    <Text className='text-white font-medium text-lg'>
+                    <Text style={styles.btn_text}>
                         Criar
                     </Text>
                 </TouchableOpacity>
