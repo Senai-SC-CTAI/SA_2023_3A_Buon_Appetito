@@ -1,43 +1,34 @@
 <h1>Yuri</h1>
-<h3>Gerenciar Aluno</h3>
+<h3>Tela Cadastro de Usuário</h3>
 
-- [ ] - O aluno poderá visualizar o cardápio do dia
-- [ ] - O aluno poderá visualizar o cardápio da semana
-- [ ] - Poderá filtrar entre alimentos e bebidas
-- [ ] - O aluno poderá autenticar com e-mail institucional no sistema
+- [ ] - RF1 - O aluno poderá se cadastrar no app
 
-#Opcional
-- [ ] - O aluno poderá fornecer sugestões ou feedback no cardápio
-- [ ] - O aluno poderá realizar uma compra antecipada dos produtos
+<h1>Julia Wenzel</h1>
+<h3>Tela Login de Usuário</h3>
 
-<h3>Gerenciar Gerente</h3>
-// gerente será cadastrado pelo programador
+- [ ] - RF2 - O aluno poderá fazer login no app
+- [ ] - RF20 - O funcionário poderá fazer login
 
-- [ ] - O gerente poderá autenticar na aplicação
-- [ ] - O gerente poderá visualizar os dados cadastrados
-- [ ] - O gerente poderá editar os dados do seu perfil
-- [ ] - O gerente poderá recuperar as credenciais de acesso
+<h1>Isadora Wenzel</h1>
+<h3>Tela Recuperação de Senha</h3>
 
-- [ ] - O gerente poderá cadastrar um novo funcionário
-- [ ] - O gerente poderá listar os funcionários cadastrados
-- [ ] - O gerente poderá visualizar os dados de um funcionário
-- [ ] - O gerente poderá editar os dados de um funcionário
-- [ ] - O gerente poderá desabilitar um novo funcionário
+- [ ] - RF3 - Aluno poderá recuperar senha
 
-#Opcional
-- [ ] - O gerente poderá visualizar o quantitativa de produtos ofertados 
-- [ ] - O gerente poderá customizar um filtro para a busca do quantitativo dos produtos
+<h1>Valentina Kroth</h1>
+<h3>Tela do Cardápio</h3>
 
-<h3>Gerenciar Funcionários e Gerente</h3>
+- [ ] - RF4 - O aluno poderá visualizar o cardápio do dia
+- [ ] - RF5 - O aluno poderá visualizar o cardápio da semana
 
-- [ ] - O funcionário poderá cadastrar um produto
-- [ ] - O funcionário poderá listar todos os produtos cadastrados
-- [ ] - O funcionário poderá visualizar um único produto 
-- [ ] - O funcionário poderá excluir um produto cadastrado
-- [ ] - O funcionário poderá editar um produto cadastrado
+<h1>Gerônimo Araújo</h1>
+<h3>Tela Cadastro de Produto</h3>
 
-<h1>Valentina</h1>
-<h3>Gerenciar Produto</h3>
+- [ ] - RF15 - O funcionário poderá cadastrar um produto
 
-- [ ] - O produto deverá conter seu preço no cardápio
-- [ ] - O produto deverá conter suas informações nutricionais no cardápio
+<h1>Francisca Clara</h1>
+<h3>Tela de Edição do Cardápio</h3>
+
+- [ ] - RF16 - O funcionário poderá listar todos os produtos cadastrados
+- [ ] - RF17 - O funcionário poderá visualizar um único produto
+- [ ] - RF18 - O funcionário poderá excluir um produto cadastrado
+- [ ] - RF19 - O funcionário poderá editar um produto cadastrado
