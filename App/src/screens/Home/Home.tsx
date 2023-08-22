@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, TouchableOpacity, Text} from 'react-native';
+import { View, TouchableOpacity, Text, TextInput} from 'react-native';
 
 import styles from './HomeStyles'
 
@@ -14,12 +14,18 @@ export function Home() {
     }
   
     return (
-    <View className="flex-1">
-        <View className='mt-16 ml-10'>
-            <Text className='text-base text-[#606060]'>Valentina Kroth Gil Cardoso</Text>
-            <Text className='font-medium mt-2 text-4xl text-[#402218]'>Seja bem-vindo!</Text>
-            <Text className='mt-2 text-xl text-[#606060]'>Veja as opções do dia para a sua refeição</Text>
+    <View>
+        <View>
+            <Text style={styles.nome}>Valentina Kroth Gil Cardoso</Text>
+            <Text style={styles.titulo}>Cardápio Cantina</Text>
+            <Text style={styles.subtitulo}>Veja as opções do dia para a sua refeição</Text>
         </View>
+
+        <TextInput 
+            style={styles.pesquisar}
+                placeholder='Pesquisar...'>
+            </TextInput>
+
         {/* <TouchableOpacity className='text-center items-center justify-center'
             onPress={openScreen}>
             <Text>
