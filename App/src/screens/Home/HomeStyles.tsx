@@ -16,9 +16,9 @@ const HomeStyles = StyleSheet.create({
     },
 
     pesquisar: {
-        backgroundColor: '#fdfdfd',
-        borderRadius: 10,
-        color: '#b8b8b8',
+        backgroundColor: '#E7E7E7',
+        borderRadius: 100,
+        color: '#ADADAD',
         padding: 10
     }
 })
