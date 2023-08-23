@@ -14,7 +14,7 @@ export function Home() {
     }
   
     return (
-    <View>
+    <View style={styles.main}>
         <View>
             <Text style={styles.nome}>Valentina Kroth Gil Cardoso</Text>
             <Text style={styles.titulo}>Cardápio Cantina</Text>
@@ -25,6 +25,7 @@ export function Home() {
             style={styles.pesquisar}
                 placeholder='Pesquisar...'>
             </TextInput>
+
 
         {/* <TouchableOpacity className='text-center items-center justify-center'
             onPress={openScreen}>

@@ -20,7 +20,15 @@ const HomeStyles = StyleSheet.create({
         borderRadius: 100,
         color: '#ADADAD',
         padding: 10
-    }
+    },
+
+    main: {
+        flex: 1,
+        width: '100%',
+        height: '100%',
+        alignItems: 'center',
+        backgroundColor: '#FEFEFE'
+    },
 })
 
 export default HomeStyles
