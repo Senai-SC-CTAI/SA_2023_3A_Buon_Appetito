@@ -15,40 +15,46 @@ export function RecSenha2() {
     }
   
     return (
-        <View className="mx-auto flex-1 bg-[#F5EFEC]">
+        <View style={styles.main}>
     
-            <Image className='mx-auto' source={require('../../../assets/header-register.png')}/>
-    
-            {/* <View className='relative'>
-                <View className='absolute'>
-                <View className="mx-auto w-32 h-32 rounded-full bg-[#F5EFEC] border-[#BFA08F] border-4">
-                    <Image className='mx-auto mt-2' source={require('../../assets/logo-cantina.png')}/>
-                </View>
-                </View>
-            </View> */}
-            <View className='mx-[50px]'>
-                <View className='items-center justify-center mt-24'>
+        <Image source={require('../../../assets/header-register.png')}style={styles.imglogo}/>
 
-                    <View className='text-center justify-center items-center'>
-                        <Text className='font-medium text-[28px] mt-14'>
-                            Recuperar Senha
-                        </Text>
-                        <Text className='text-lg mt-4 text-center text-[#515151] mx-[8]'>
-                            Digite o código que enviamos para o seu email
-                        </Text>
-                    </View>
-    
-                </View>
-                <View>
-                    <TouchableOpacity className='mt-6 text-center items-center justify-center px-24 py-2 bg-[#743C34] rounded-[10px]'
-                        onPress={openScreen}>
-                        <Text className='text-white font-medium text-lg'>
-                            Próximo
-                        </Text>
-                    </TouchableOpacity>
-                </View>
-                
+        {/* <View className='relative'>
+            <View className='absolute'>
+            <View className="mx-auto w-32 h-32 rounded-full bg-[#F5EFEC] border-[#BFA08F] border-4">
+                <Image className='mx-auto mt-2' source={require('../../assets/logo-cantina.png')}/>
             </View>
+            </View>
+        </View> */}
+        <View style={styles.container}>
+         
+                
+                    <Text style={styles.titulo}>
+                        Recuperar Senha
+                    </Text>
+                    <Text style={styles.titulo2}>
+                    Digite o código que enviamos <br />
+                     para o seu email
+                    </Text>
+                <View style={styles.container_info}>
+                    <View style={styles.info_caixa}>
+                        <TextInput style={styles.info_caixa_text}
+                        placeholder='Email'>
+                        </TextInput>
+                    </View>
+
+                </View>
+            </View>
+            <View style={styles.container2}>
+                <TouchableOpacity style={styles.btn}
+                 onPress={openScreen}>
+                    <Text style={styles.btn_text}>
+                        Próximo
+                    </Text>
+                </TouchableOpacity>
+            </View>
+            
         </View>
-      );
+
+  );
 }
