@@ -15,9 +15,9 @@ export function RecSenha1() {
     }
   
     return (
-        <View className="mx-auto flex-1 bg-[#F5EFEC]">
+        <View style={styles.main}>
     
-            <Image className='mx-auto' source={require('../../../assets/header-register.png')}/>
+            <Image source={require('../../../assets/header-register.png')}style={styles.imglogo}/>
     
             {/* <View className='relative'>
                 <View className='absolute'>
@@ -26,38 +26,35 @@ export function RecSenha1() {
                 </View>
                 </View>
             </View> */}
-            <View className='mx-[50px]'>
-                <View className='items-center justify-center mt-24'>
+            <View style={styles.container}>
+             
                     
-                        <Text className='font-medium text-[28px] mt-14'>
+                        <Text style={styles.titulo}>
                             Recuperar Senha
                         </Text>
-                    <View className='gap-5 mt-3'>
-                        <View className='py-3 border-b border-[#D5D5D5] w-[285px]'>
-                            <TextInput className='text-[18px]'
+                        <Text style={styles.titulo2}>
+                        Digite o email para enviarmos <br />
+                        o código de recuperação
+                        </Text>
+                    <View style={styles.container_info}>
+                        <View style={styles.info_caixa}>
+                            <TextInput style={styles.info_caixa_text}
                             placeholder='Email'>
                             </TextInput>
                         </View>
-    
-                        <View className='py-3 border-b border-[#D5D5D5] w-[285px]'>
-                            <TextInput className='text-[18px]'
-                            placeholder='Senha'
-                            secureTextEntry={true}>
-                            
-                            </TextInput>
-                        </View>
+
                     </View>
                 </View>
-                <View>
-                    <TouchableOpacity className='mt-6 text-center items-center justify-center px-24 py-2 bg-[#743C34] rounded-[10px]'
-                        onPress={openScreen}>
-                        <Text className='text-white font-medium text-lg'>
+                <View style={styles.container2}>
+                    <TouchableOpacity style={styles.btn}
+                     onPress={openScreen}>
+                        <Text style={styles.btn_text}>
                             Próximo
                         </Text>
                     </TouchableOpacity>
                 </View>
                 
             </View>
-        </View>
+  
       );
 }
