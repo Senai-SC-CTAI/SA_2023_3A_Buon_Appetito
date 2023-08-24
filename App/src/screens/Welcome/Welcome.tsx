@@ -20,7 +20,7 @@ export function Welcome() {
     <View style={styles.main}>
 
         <View >
-            <Image 
+            <Image style={{width: 430, height: 380}}
             source={require('../../../assets/header-welcome.png')} 
             />
         </View>
