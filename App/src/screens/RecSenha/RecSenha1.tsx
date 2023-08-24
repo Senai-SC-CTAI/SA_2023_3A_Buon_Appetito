@@ -4,7 +4,7 @@ import { View, TouchableOpacity, Text, TextInput, Image} from 'react-native';
 import styles from './RecSenha1Styles'
 
 import { useNavigation } from '@react-navigation/native';
-import CheckboxWithText from '../../Components/CheckboxWithText';
+
 
 
 export function RecSenha1() {
@@ -17,7 +17,7 @@ export function RecSenha1() {
     return (
         <View style={styles.main}>
     
-            <Image source={require('../../../assets/header-register.png')}style={styles.imglogo}/>
+            <Image source={require('../../../assets/header-image.png')}style={styles.imglogo}/>
     
             {/* <View className='relative'>
                 <View className='absolute'>
@@ -33,7 +33,7 @@ export function RecSenha1() {
                             Recuperar Senha
                         </Text>
                         <Text style={styles.titulo2}>
-                        Digite o email para enviarmos <br />
+                        Digite o email para enviarmos
                         o código de recuperação
                         </Text>
                     <View style={styles.container_info}>

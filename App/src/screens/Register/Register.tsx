@@ -17,7 +17,7 @@ export function Register() {
     return (
     <View style={styles.main}>
 
-        <Image source={require('../../../assets/header-register.png')}/>
+        <Image source={require('../../../assets/header-image.png')}/>
 
         {/* <View className='relative'>
             <View className='absolute'>

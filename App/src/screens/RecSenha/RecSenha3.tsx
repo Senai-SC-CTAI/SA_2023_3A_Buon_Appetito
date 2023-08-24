@@ -17,7 +17,7 @@ export function RecSenha3() {
     return (
         <View className="mx-auto flex-1 bg-[#F5EFEC]">
     
-            <Image className='mx-auto' source={require('../../../assets/header-register.png')}/>
+            <Image className='mx-auto' source={require('../../../assets/header-image.png')}/>
     
             {/* <View className='relative'>
                 <View className='absolute'>

@@ -17,7 +17,7 @@ export function RecSenha2() {
     return (
         <View style={styles.main}>
     
-        <Image source={require('../../../assets/header-register.png')}style={styles.imglogo}/>
+        <Image source={require('../../../assets/header-image.png')}style={styles.imglogo}/>
 
         {/* <View className='relative'>
             <View className='absolute'>

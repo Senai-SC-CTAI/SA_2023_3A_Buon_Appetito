@@ -33,7 +33,6 @@ const RecSenha1Styles = StyleSheet.create({
 
     },
     container_info: {
-        gap: 16,
         marginTop: 28,
         width: 285
     },

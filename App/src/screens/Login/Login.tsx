@@ -5,7 +5,7 @@ import styles from './LoginStyles'
 
 import { useNavigation } from '@react-navigation/native';
 import CheckboxWithText from '../../Components/CheckboxWithText';
-
+import HeaderImage from '../../Components/HeaderImage';
 
 export function Login() {
     const navigation = useNavigation();
@@ -20,7 +20,7 @@ export function Login() {
     return (
         <View style={styles.main}>
     
-            <Image source={require('../../../assets/header-register.png')}/>
+            <HeaderImage />
     
             {/* <View className='relative'>
                 <View className='absolute'>
