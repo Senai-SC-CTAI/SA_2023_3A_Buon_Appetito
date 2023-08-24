@@ -5,7 +5,7 @@ import styles from './RegisterStyles'
 
 import { useNavigation } from '@react-navigation/native';
 
-import CheckboxWithText from '../../Components/CheckboxWithText';
+import HeaderImage from '../../Components/HeaderImage';
 
 export function Register() {
     const navigation = useNavigation();
@@ -17,7 +17,7 @@ export function Register() {
     return (
     <View style={styles.main}>
 
-        <Image source={require('../../../assets/header-image.png')}/>
+        <HeaderImage />
 
         {/* <View className='relative'>
             <View className='absolute'>

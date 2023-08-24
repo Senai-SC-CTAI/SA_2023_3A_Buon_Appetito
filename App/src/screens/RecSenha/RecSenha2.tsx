@@ -4,7 +4,7 @@ import { View, TouchableOpacity, Text, TextInput, Image} from 'react-native';
 import styles from './RecSenha2Styles'
 
 import { useNavigation } from '@react-navigation/native';
-import CheckboxWithText from '../../Components/CheckboxWithText';
+import HeaderImage from '../../Components/HeaderImage';
 
 
 export function RecSenha2() {
@@ -17,7 +17,7 @@ export function RecSenha2() {
     return (
         <View style={styles.main}>
     
-        <Image source={require('../../../assets/header-image.png')}style={styles.imglogo}/>
+            <HeaderImage />
 
         {/* <View className='relative'>
             <View className='absolute'>

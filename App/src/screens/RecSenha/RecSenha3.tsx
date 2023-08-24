@@ -4,7 +4,7 @@ import { View, TouchableOpacity, Text, TextInput, Image} from 'react-native';
 import styles from './RecSenha3Styles'
 
 import { useNavigation } from '@react-navigation/native';
-import CheckboxWithText from '../../Components/CheckboxWithText';
+import HeaderImage from '../../Components/HeaderImage';
 
 
 export function RecSenha3() {
@@ -17,7 +17,7 @@ export function RecSenha3() {
     return (
         <View className="mx-auto flex-1 bg-[#F5EFEC]">
     
-            <Image className='mx-auto' source={require('../../../assets/header-image.png')}/>
+            <HeaderImage />
     
             {/* <View className='relative'>
                 <View className='absolute'>

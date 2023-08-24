@@ -5,6 +5,8 @@ import styles from './RecSenha1Styles'
 
 import { useNavigation } from '@react-navigation/native';
 
+import HeaderImage from '../../Components/HeaderImage';
+
 
 
 export function RecSenha1() {
@@ -17,7 +19,7 @@ export function RecSenha1() {
     return (
         <View style={styles.main}>
     
-            <Image source={require('../../../assets/header-image.png')}style={styles.imglogo}/>
+            <HeaderImage />
     
             {/* <View className='relative'>
                 <View className='absolute'>
