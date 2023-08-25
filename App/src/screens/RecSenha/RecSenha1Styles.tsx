@@ -11,7 +11,8 @@ const RecSenha1Styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 35
+        marginTop: 35,
+        
     },
     titulo: {
         fontWeight: '500',
@@ -74,10 +75,7 @@ const RecSenha1Styles = StyleSheet.create({
         fontSize: 18,
         lineHeight: 28
     },
-    imglogo:{
-        width: '100%',
-        height: '35%'
-    }
+    
 })
 
 export default RecSenha1Styles
