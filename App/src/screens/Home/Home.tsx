@@ -21,10 +21,16 @@ export function Home() {
             <Text style={styles.subtitulo}>Veja as opções do dia para a sua refeição</Text>
         </View>
 
+        <View style={styles.container}>
         <TextInput 
             style={styles.pesquisar}
                 placeholder='Pesquisar...'>
             </TextInput>
+
+            <TouchableOpacity style={styles.btn}
+                onPress={openScreen}>
+            </TouchableOpacity>
+        </View>
 
 
         {/* <TouchableOpacity className='text-center items-center justify-center'

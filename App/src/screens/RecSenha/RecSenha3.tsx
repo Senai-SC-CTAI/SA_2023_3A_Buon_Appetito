@@ -4,7 +4,7 @@ import { View, TouchableOpacity, Text, TextInput, Image} from 'react-native';
 import styles from './RecSenha3Styles'
 
 import { useNavigation } from '@react-navigation/native';
-import CheckboxWithText from '../../Components/CheckboxWithText';
+import HeaderImage from '../../Components/HeaderImage';
 
 
 export function RecSenha3() {
@@ -14,51 +14,57 @@ export function RecSenha3() {
         navigation.navigate('recsenha4')
     }
   
+    function openScreenrecsenha2(){
+        navigation.navigate('recsenha2')
+    }
+
     return (
-        <View className="mx-auto flex-1 bg-[#F5EFEC]">
+        <View style={styles.main}>
     
-            <Image className='mx-auto' source={require('../../../assets/header-register.png')}/>
-    
-            {/* <View className='relative'>
-                <View className='absolute'>
-                <View className="mx-auto w-32 h-32 rounded-full bg-[#F5EFEC] border-[#BFA08F] border-4">
-                    <Image className='mx-auto mt-2' source={require('../../assets/logo-cantina.png')}/>
-                </View>
-                </View>
-            </View> */}
-            <View className='mx-[50px]'>
-                <View className='items-center justify-center mt-24'>
-    
-                    <Text className='font-medium text-[28px] mt-14'>
+            <HeaderImage />
+
+        {/* <View className='relative'>
+            <View className='absolute'>
+            <View className="mx-auto w-32 h-32 rounded-full bg-[#F5EFEC] border-[#BFA08F] border-4">
+                <Image className='mx-auto mt-2' source={require('../../assets/logo-cantina.png')}/>
+            </View>
+            </View>
+        </View> */}
+        <View style={styles.container}>
+         
+                
+                    <Text style={styles.titulo}>
                         Recuperar Senha
                     </Text>
-    
-                    <View className='gap-5 mt-3'>
-                        <View className='py-3 border-b border-[#D5D5D5] w-[285px]'>
-                            <TextInput className='text-[18px]'
-                            placeholder='Email'>
-                            </TextInput>
-                        </View>
-    
-                        <View className='py-3 border-b border-[#D5D5D5] w-[285px]'>
-                            <TextInput className='text-[18px]'
-                            placeholder='Senha'
+                    <View style={styles.info_caixa}>
+                            <TextInput style={styles.info_caixa_text}
+                            placeholder='Digite sua nova senha'
                             secureTextEntry={true}>
-                            
                             </TextInput>
                         </View>
-                    </View>
+
+                        <View style={styles.info_caixa}>
+                            <TextInput style={styles.info_caixa_text}
+                            placeholder='Confirme sua senha'
+                            secureTextEntry={true}>
+                            </TextInput>
+    
+
                 </View>
-                <View>
-                    <TouchableOpacity className='mt-6 text-center items-center justify-center px-24 py-2 bg-[#743C34] rounded-[10px]'
-                        onPress={openScreen}>
-                        <Text className='text-white font-medium text-lg'>
-                            Próximo
-                        </Text>
-                    </TouchableOpacity>
-                </View>
-                
             </View>
+            <View style={styles.buttonContainer}>
+         <TouchableOpacity style={styles.btn} onPress={openScreenrecsenha2}>
+            <Text style={styles.btn_text}>Voltar</Text>
+        </TouchableOpacity>
+
+        <View style={styles.buttonSeparator}></View>
+
+        <TouchableOpacity style={styles.btn} onPress={openScreen}>
+            <Text style={styles.btn_text}>Próximo</Text>
+        </TouchableOpacity>
+            </View>
+            
         </View>
-      );
+
+  );
 }

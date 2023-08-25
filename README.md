@@ -1,4 +1,4 @@
-<h1>Yuri</h1>
+<h1>Francisca Clara</h1>
 <h3>Tela Cadastro de Usuário</h3>
 
 - [ ] - RF1 - O aluno poderá se cadastrar no app
@@ -25,7 +25,7 @@
 
 - [ ] - RF15 - O funcionário poderá cadastrar um produto
 
-<h1>Francisca Clara</h1>
+<h1>Yuri Castilho</h1>
 <h3>Tela de Edição do Cardápio</h3>
 
 - [ ] - RF16 - O funcionário poderá listar todos os produtos cadastrados
