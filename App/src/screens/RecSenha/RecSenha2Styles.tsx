@@ -11,7 +11,8 @@ const RecSenha2Styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 35
+        marginTop: 35,
+        
     },
     titulo: {
         fontWeight: '500',
@@ -47,10 +48,21 @@ const RecSenha2Styles = StyleSheet.create({
         fontSize: 18
     },
     container2: {
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between'
-    },
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        marginBottom: 19, 
+     
+      },
+    
+      buttonContainer: {
+        flexDirection: 'row', 
+        justifyContent: 'center',
+      },
+
+      buttonSeparator: {
+        width: 30, 
+      },
+
     recSenha: {
         marginTop: 24
     },
@@ -58,6 +70,8 @@ const RecSenha2Styles = StyleSheet.create({
         color: '#743C34',
         fontSize: 14
     },
+
+
     btn: {
         marginTop: 24,
         textAlign: 'center',
@@ -67,7 +81,7 @@ const RecSenha2Styles = StyleSheet.create({
         paddingBottom: 8,
         backgroundColor: '#743C34',
         borderRadius: 10,
-        width: '150%'
+        width: '100%'
     },
     btn_text: {
         color: 'white',
@@ -75,10 +89,36 @@ const RecSenha2Styles = StyleSheet.create({
         fontSize: 18,
         lineHeight: 28
     },
-    imglogo:{
-        width: '100%',
-        height: '35%'
-    }
+    
+    codeContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+      },
+      codeInputContainer: {
+        flexDirection: 'column',
+        alignItems: 'center',
+        marginRight: 15,
+      },
+      codeInput: {
+        width: 40,
+        height: 40,
+        fontSize: 24,
+        textAlign: 'center',
+        borderBottomWidth: 1,
+      },
+      codeDivider: {
+        width: 40,
+        height: 1,
+        backgroundColor: 'black',
+        marginTop: 5,
+      },
+
+      centeredCodeContainer: {
+        flexDirection: 'row-reverse',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 50
+      }
 })
 
 export default RecSenha2Styles
