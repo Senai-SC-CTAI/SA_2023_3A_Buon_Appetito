@@ -25,7 +25,7 @@ export function RecSenha2() {
             <View style={styles.container}>
                 <Text style={styles.titulo}>Recuperar Senha</Text>
                 <Text style={styles.titulo2}>
-                    Digite o código que enviamos <br />
+                    Digite o código que enviamos
                     para o seu email
                 </Text>
 

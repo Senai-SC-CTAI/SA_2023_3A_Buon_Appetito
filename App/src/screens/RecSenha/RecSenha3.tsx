@@ -24,24 +24,12 @@ export function RecSenha3() {
 
     return (
         <View style={styles.main}>
-    
             <HeaderImage />
 
-        {/* <View className='relative'>
-            <View className='absolute'>
-            <View className="mx-auto w-32 h-32 rounded-full bg-[#F5EFEC] border-[#BFA08F] border-4">
-                <Image className='mx-auto mt-2' source={require('../../assets/logo-cantina.png')}/>
-            </View>
-            </View>
-        </View> */}
-    <View>
         <View style={styles.container}>
          
                 
-                    <Text style={styles.titulo}>
-                        Recuperar Senha
-                    </Text>
-                    <View style={styles.info_caixa}>
+                    <Text style={styles.titulo}>Recuperar Senha</Text>
                     <View style={styles.info_caixa}>
                             <TextInput style={styles.info_caixa_text}
                             placeholder='Digite sua nova senha'
@@ -89,6 +77,5 @@ export function RecSenha3() {
             </View>
             
         </View>
-
   );
 }
