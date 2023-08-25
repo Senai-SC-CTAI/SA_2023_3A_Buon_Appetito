@@ -17,18 +17,18 @@ const RecSenha4Styles = StyleSheet.create({
     },
     titulo: {
         fontWeight: '500',
-        fontSize: 28, 
-        marginTop: 56,
-        marginBottom: 35,
+        fontSize: 25, 
+        marginTop: 46,
+        marginBottom: 10,
         textAlign: 'center',
     },
     titulo2: {
         textAlign: 'center',
-        marginTop: 24,
+        marginTop: 10,
         fontSize: 15,
         lineHeight: 24,
         fontWeight: '300',
-        color: '#515151'
+        color: '#515151',
         // fontSize: 15,
         // justifyContent: 'center',
         // marginTop: 25,
@@ -92,7 +92,16 @@ const RecSenha4Styles = StyleSheet.create({
         fontSize: 18,
         lineHeight: 28
     },
-    
+
+    imageContainer: {
+        marginTop: 0,  // Espaçamento entre a imagem e o texto
+        alignItems: 'center',
+    },
+    imgs: {
+        width: 200,    // Largura da imagem
+        height: 200,   // Altura da imagem
+        resizeMode: 'contain', // Modo de redimensionamento da imagem
+    },
 
 })
 
