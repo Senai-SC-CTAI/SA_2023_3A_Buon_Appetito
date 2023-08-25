@@ -25,7 +25,8 @@ const RecSenha2Styles = StyleSheet.create({
         fontSize: 15,
         lineHeight: 24,
         fontWeight: '300',
-        color: '#515151'
+        color: '#515151',
+        marginBottom: 24,
         // fontSize: 15,
         // justifyContent: 'center',
         // marginTop: 25,
@@ -73,7 +74,7 @@ const RecSenha2Styles = StyleSheet.create({
 
 
     btn: {
-        marginTop: 24,
+        marginTop: 45,
         textAlign: 'center',
         alignItems: 'center',
         justifyContent: 'center',
@@ -110,14 +111,14 @@ const RecSenha2Styles = StyleSheet.create({
         width: 40,
         height: 1,
         backgroundColor: 'black',
-        marginTop: 5,
+        marginTop: 10,
       },
 
       centeredCodeContainer: {
         flexDirection: 'row-reverse',
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 50
+        marginTop: 35,
       }
 })
 
