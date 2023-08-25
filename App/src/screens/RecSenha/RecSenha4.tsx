@@ -25,7 +25,12 @@ export function RecSenha4() {
             <View style={styles.container}>
                 <Text style={styles.titulo}>Sua senha foi alterada com sucesso!</Text>
                 <Text style={styles.titulo2}>Continue fazendo o login</Text>
+               
             </View>
+
+            <View style={styles.imageContainer}>
+    <Image style={styles.imgs} source={require('../../../assets/happy.png')} />
+</View>
 
             <View style={styles.buttonContainer}>
          <TouchableOpacity style={styles.btn} onPress={openScreenrecsenha3}>
