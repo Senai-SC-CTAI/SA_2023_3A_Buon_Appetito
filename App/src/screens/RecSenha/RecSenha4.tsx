@@ -13,51 +13,30 @@ export function RecSenha4() {
     function openScreen(){
         navigation.navigate('login')
     }
+
+    function openScreenrecsenha3(){
+        navigation.navigate('recsenha3')
+    }
   
     return (
-        <View className="mx-auto flex-1 bg-[#F5EFEC]">
-    
+        <View style={styles.main}>
             <HeaderImage />
-    
-            {/* <View className='relative'>
-                <View className='absolute'>
-                <View className="mx-auto w-32 h-32 rounded-full bg-[#F5EFEC] border-[#BFA08F] border-4">
-                    <Image className='mx-auto mt-2' source={require('../../assets/logo-cantina.png')}/>
-                </View>
-                </View>
-            </View> */}
-            <View className='mx-[50px]'>
-                <View className='items-center justify-center mt-24'>
-    
-                    <Text className='font-medium text-[28px] mt-14'>
-                        Sua senha foi alterada com sucesso!
-                    </Text>
-    
-                    <View className='gap-5 mt-3'>
-                        <View className='py-3 border-b border-[#D5D5D5] w-[285px]'>
-                            <TextInput className='text-[18px]'
-                            placeholder='Email'>
-                            </TextInput>
-                        </View>
-    
-                        <View className='py-3 border-b border-[#D5D5D5] w-[285px]'>
-                            <TextInput className='text-[18px]'
-                            placeholder='Senha'
-                            secureTextEntry={true}>
-                            
-                            </TextInput>
-                        </View>
-                    </View>
-                </View>
-                <View>
-                    <TouchableOpacity className='mt-6 text-center items-center justify-center px-24 py-2 bg-[#743C34] rounded-[10px]'
-                        onPress={openScreen}>
-                        <Text className='text-white font-medium text-lg'>
-                            Próximo
-                        </Text>
-                    </TouchableOpacity>
-                </View>
-                
+
+            <View style={styles.container}>
+                <Text style={styles.titulo}>Sua senha foi alterada com sucesso!</Text>
+                <Text style={styles.titulo2}>Continue fazendo o login</Text>
+            </View>
+
+            <View style={styles.buttonContainer}>
+         <TouchableOpacity style={styles.btn} onPress={openScreenrecsenha3}>
+            <Text style={styles.btn_text}>Voltar</Text>
+        </TouchableOpacity>
+
+        <View style={styles.buttonSeparator}></View>
+
+        <TouchableOpacity style={styles.btn} onPress={openScreen}>
+            <Text style={styles.btn_text}>Próximo</Text>
+        </TouchableOpacity>
             </View>
         </View>
       );
