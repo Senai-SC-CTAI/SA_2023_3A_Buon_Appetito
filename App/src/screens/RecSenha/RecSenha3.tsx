@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState} from 'react';
 import { View, TouchableOpacity, Text, TextInput, Image} from 'react-native';
 
 import styles from './RecSenha3Styles'
 
 import { useNavigation } from '@react-navigation/native';
 import HeaderImage from '../../Components/HeaderImage';
+import { Ionicons } from '@expo/vector-icons';
 
 
 export function RecSenha3() {
     const navigation = useNavigation();
   
+    const[input, setInput] = useState('');
+    const[hidePass, setHidePass] = useState(true);
+
     function openScreen(){
         navigation.navigate('recsenha4')
     }
@@ -30,6 +34,7 @@ export function RecSenha3() {
             </View>
             </View>
         </View> */}
+    <View>
         <View style={styles.container}>
          
                 
@@ -37,17 +42,36 @@ export function RecSenha3() {
                         Recuperar Senha
                     </Text>
                     <View style={styles.info_caixa}>
+                    <View style={styles.info_caixa}>
                             <TextInput style={styles.info_caixa_text}
                             placeholder='Digite sua nova senha'
-                            secureTextEntry={true}>
+                            value= {input}
+                            onChangeText={ (texto) => setInput(texto)}
+                            secureTextEntry={hidePass}>
                             </TextInput>
+                            <TouchableOpacity style={styles.icon} onPress= { () => setHidePass(!hidePass) }>
+                                { hidePass ?
+                                    <Ionicons name= "eye-off" color="#000" size={25} />
+                                    :
+                                    <Ionicons name= "eye" color="#000" size={25} />
+                                }
+                            </TouchableOpacity>
                         </View>
 
                         <View style={styles.info_caixa}>
                             <TextInput style={styles.info_caixa_text}
                             placeholder='Confirme sua senha'
-                            secureTextEntry={true}>
+                            value= {input}
+                            onChangeText={ (texto) => setInput(texto)}
+                            secureTextEntry={hidePass}>
                             </TextInput>
+                            <TouchableOpacity style={styles.icon} onPress= { () => setHidePass(!hidePass) }>
+                                { hidePass ?
+                                    <Ionicons name= "eye-off" color="#000" size={25} />
+                                    :
+                                    <Ionicons name= "eye" color="#000" size={25} />
+                                }
+                            </TouchableOpacity>
     
 
                 </View>
