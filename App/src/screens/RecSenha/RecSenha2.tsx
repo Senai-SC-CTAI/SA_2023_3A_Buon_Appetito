@@ -13,6 +13,10 @@ export function RecSenha2() {
     function openScreen(){
         navigation.navigate('recsenha3')
     }
+
+    function openScreenrecsenha1(){
+        navigation.navigate('recsenha1')
+    }
   
     return (
         <View style={styles.main}>
@@ -36,24 +40,62 @@ export function RecSenha2() {
                     Digite o código que enviamos <br />
                      para o seu email
                     </Text>
-                <View style={styles.container_info}>
-                    <View style={styles.info_caixa}>
-                        <TextInput style={styles.info_caixa_text}
-                        placeholder='Email'>
-                        </TextInput>
-                    </View>
+                    <View style={styles.codeContainer}>
 
+        <View style={styles.codeContainer}>
+  <View style={styles.codeInputContainer}>
+    <TextInput style={styles.codeInput} maxLength={1} />
+  </View>
+
+  <View style={styles.codeContainer}>
+  <View style={styles.codeInputContainer}>
+    <TextInput style={styles.codeInput} maxLength={1} />
+  </View>
+
+  <View style={styles.codeInputContainer}>
+    <TextInput style={styles.codeInput} maxLength={1} />
+  </View>
+
+  <View style={styles.codeInputContainer}>
+    <TextInput style={styles.codeInput} maxLength={1} />
+  </View>
+
+
+
+</View>
+
+{/* Adicione os dois novos inputs centralizados */}
+<View style={styles.centeredCodeContainer}>
+  <View style={styles.codeInputContainer}>
+    <TextInput style={styles.codeInput} maxLength={1} />
+  </View>
+
+  <View style={styles.codeInputContainer}>
+    <TextInput style={styles.codeInput} maxLength={1} />
+  </View>
+
+</View>
+
+</View>
+   
                 </View>
             </View>
+
             <View style={styles.container2}>
-                <TouchableOpacity style={styles.btn}
-                 onPress={openScreen}>
-                    <Text style={styles.btn_text}>
-                        Próximo
-                    </Text>
-                </TouchableOpacity>
-            </View>
-            
+    <View style={styles.buttonContainer}>
+         <TouchableOpacity style={styles.btn} onPress={openScreenrecsenha1}>
+            <Text style={styles.btn_text}>Voltar</Text>
+        </TouchableOpacity>
+
+        <View style={styles.buttonSeparator}></View>
+
+        <TouchableOpacity style={styles.btn} onPress={openScreen}>
+            <Text style={styles.btn_text}>Próximo</Text>
+        </TouchableOpacity>
+
+       
+    </View>
+</View>    
         </View>
 
   );
