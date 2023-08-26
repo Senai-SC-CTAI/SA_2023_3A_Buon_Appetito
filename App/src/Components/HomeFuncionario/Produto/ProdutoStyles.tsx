@@ -12,6 +12,9 @@ const ProdutoStyles = StyleSheet.create({
         backgroundColor: '#FCFCFC',
         width: 300
     },
+    nome:{
+        fontSize: 22
+    }
 })
 
 export default ProdutoStyles

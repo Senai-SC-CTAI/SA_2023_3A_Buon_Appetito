@@ -7,10 +7,10 @@ export function Produto() {
     return (
         <TouchableOpacity>
             <View style={styles.container}>
-                <Text>Imagem</Text>
-                <Text>Produto</Text>
+                <Text style={styles.nome}>Imagem</Text>
+                <Text style={styles.nome}>Produto</Text>
                 <TouchableOpacity>
-                    <Text>Excluir</Text>
+                    <Text style={styles.nome}>Excluir</Text>
                 </TouchableOpacity>
             </View>
         </TouchableOpacity>
