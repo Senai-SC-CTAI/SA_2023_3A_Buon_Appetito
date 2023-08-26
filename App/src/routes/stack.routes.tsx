@@ -11,6 +11,7 @@ import { RecSenha1 } from '../screens/RecSenha/RecSenha1';
 import { RecSenha2 } from '../screens/RecSenha/RecSenha2';
 import { RecSenha3 } from '../screens/RecSenha/RecSenha3';
 import { RecSenha4 } from '../screens/RecSenha/RecSenha4';
+import { HomeFunc } from '../screens/HomeFuncionario/HomeFunc';
 
 export function StackRoutes(){
     return(
@@ -79,6 +80,14 @@ export function StackRoutes(){
                     headerShown: false
                 }}
                 component={RecSenha4}
+            />
+            <Screen
+                name='homefunc'
+                options={{
+                    title: 'HomeFunc',
+                    headerShown: false
+                }}
+                component={HomeFunc}
             />
         </Navigator>
     )

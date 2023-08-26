@@ -15,6 +15,9 @@ export function Welcome() {
     function openScreenRegister(){
         navigation.navigate('register')
     }
+    function openScreenHomeFunc(){
+        navigation.navigate('homefunc')
+    }
   
     return (
     <View style={styles.main}>
@@ -49,6 +52,13 @@ export function Welcome() {
                     onPress={openScreenLogin}>
                     <Text style={styles.login_texto}>
                         Login
+                    </Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.cadastro}
+                    onPress={openScreenHomeFunc}>
+                    <Text style={styles.login_texto}>
+                        Funcionário
                     </Text>
                 </TouchableOpacity>
                 

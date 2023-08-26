@@ -5,6 +5,7 @@ export declare global{
             register: undefined;
             login: undefined;
             home: undefined;
+            homefunc: undefined;
             recsenha1: undefined;
             recsenha2: undefined;
             recsenha3: undefined;

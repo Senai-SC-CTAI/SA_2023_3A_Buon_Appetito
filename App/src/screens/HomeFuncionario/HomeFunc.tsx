@@ -5,6 +5,7 @@ import styles from './HomeFuncStyles'
 
 import { useNavigation } from '@react-navigation/native';
 
+import { Cardapio } from '../../Components/HomeFuncionario/Cardapio/Cardapio';
 
 export function HomeFunc() {
     const navigation = useNavigation();
@@ -32,13 +33,7 @@ export function HomeFunc() {
             </TouchableOpacity>
         </View>
 
-
-        {/* <TouchableOpacity className='text-center items-center justify-center'
-            onPress={openScreen}>
-            <Text>
-                Voltar ao Welcome
-            </Text>
-        </TouchableOpacity> */}
+        <Cardapio />
     </View>
   );
 }
