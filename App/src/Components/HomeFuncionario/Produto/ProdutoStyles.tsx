@@ -10,7 +10,7 @@ const ProdutoStyles = StyleSheet.create({
         paddingHorizontal: 20,
         paddingVertical: 30,
         backgroundColor: '#FCFCFC',
-        width: '80%'
+        width: 300
     },
 })
 
