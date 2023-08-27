@@ -28,12 +28,12 @@ export function Header() {
                     />
                     <MagnifyingGlassIcon style={{marginLeft: 16}} size={20} strokeWidth={2} color="gray"/>
                 </View>
-                <View style={styles.settings}>
+                <TouchableOpacity style={styles.settings}>
                     <Cog6ToothIcon size={36} color={'white'}/>
-                </View>
-                <View style={styles.settings}>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.settings}>
                     <PlusIcon size={36} color={'white'}/> 
-                </View>
+                </TouchableOpacity>
             </View>
         </SafeAreaView>
   );
