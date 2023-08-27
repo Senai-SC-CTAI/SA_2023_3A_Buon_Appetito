@@ -6,8 +6,6 @@ const HeaderStyles = StyleSheet.create({
         width: '100%',
         height: '50%',
         alignItems: 'center',
-        // backgroundColor: 'red'
-        
     },
     text:{
         width: 300,
@@ -33,6 +31,17 @@ const HeaderStyles = StyleSheet.create({
         marginRight: 50,
         marginTop: 6
     },
+    search:{
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: 'rgb(245, 245, 245)',
+        borderRadius: 100,
+        padding: 16
+    },
+    search_input:{
+        fontSize: 16,
+        paddingLeft: 6
+    }
 })
 
 export default HeaderStyles
