@@ -31,17 +31,31 @@ const HeaderStyles = StyleSheet.create({
         marginRight: 50,
         marginTop: 6
     },
+    buttons:{
+        flexDirection: 'row',
+        marginTop: 60
+    },
     search:{
         flexDirection: 'row',
         alignItems: 'center',
         backgroundColor: 'rgb(245, 245, 245)',
         borderRadius: 100,
-        padding: 16
+        padding: 16,
+        paddingHorizontal: 10
     },
     search_input:{
         fontSize: 16,
         paddingLeft: 6
-    }
+    },
+    settings:{
+        marginLeft: 30,
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: 50,
+        height: 50,
+        borderRadius: 999,
+        backgroundColor: '#743C34'
+    },
 })
 
 export default HeaderStyles
