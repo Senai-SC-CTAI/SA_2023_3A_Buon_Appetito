@@ -17,7 +17,7 @@ export function Header() {
                     Cardápio Cantina
                 </Text>
                 <Text style={styles.descricao}>
-                Modificar cardápio
+                    Veja as opções do dia para a sua refeição
                 </Text>
             </View>
             <View style={styles.buttons}>
@@ -31,9 +31,7 @@ export function Header() {
                 <TouchableOpacity style={styles.settings}>
                     <Cog6ToothIcon size={36} color={'white'}/>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.settings}>
-                    <PlusIcon size={36} color={'white'}/> 
-                </TouchableOpacity>
+
             </View>
         </SafeAreaView>
   );
