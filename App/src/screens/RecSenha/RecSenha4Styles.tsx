@@ -93,6 +93,32 @@ const RecSenha4Styles = StyleSheet.create({
         lineHeight: 28
     },
 
+      btn2:{
+        marginTop: 24,
+        textAlign: 'center',
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingTop: 8,
+        paddingBottom: 8,
+        borderRadius: 10,
+        width: '100%',
+        borderWidth: 1,
+        borderColor: '#A07964',
+        backgroundColor: '#F5EFEC',
+       
+      },
+
+    btn_text2:{
+        color: '#8F8F8F',
+        fontWeight: '500',
+        fontSize: 18,
+        lineHeight: 28,
+        display:'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+      
+      },
+
     imageContainer: {
         marginTop: 0,  // Espaçamento entre a imagem e o texto
         alignItems: 'center',
