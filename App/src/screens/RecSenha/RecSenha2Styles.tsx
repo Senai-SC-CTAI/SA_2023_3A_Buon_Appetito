@@ -84,11 +84,41 @@ const RecSenha2Styles = StyleSheet.create({
         borderRadius: 10,
         width: '100%'
     },
+
+    btn2:{
+      marginTop: 45,
+      textAlign: 'center',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      paddingTop: 8,
+      paddingBottom: 8,
+      borderWidth: 1,
+      borderColor: '#A07964',
+      backgroundColor: '#F5EFEC',
+      borderRadius: 10,
+      width: '100%',
+      display:'flex',
+    },
+
+    btn_text2:{
+      color: '#8F8F8F',
+      fontWeight: '500',
+      fontSize: 18,
+      lineHeight: 28,
+      display:'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-between'
+    
+    },
+
     btn_text: {
         color: 'white',
         fontWeight: '500',
         fontSize: 18,
-        lineHeight: 28
+        lineHeight: 28,
+        display:'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between'
     },
     
     codeContainer: {
@@ -119,6 +149,14 @@ const RecSenha2Styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginTop: 35,
+      },
+
+       icon: {
+        width: '15%',
+        height: 50, 
+        justifyContent: 'center',
+        alignItems: 'center',
+        color: '#8F8F8F',
       }
 })
 
