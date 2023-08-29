@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState} from 'react';
 import { View, TouchableOpacity, Text, Image, TextInput} from 'react-native';
 
 import styles from './LoginStyles'
@@ -6,8 +6,13 @@ import styles from './LoginStyles'
 import { useNavigation } from '@react-navigation/native';
 import CheckboxWithText from '../../Components/CheckboxWithText';
 import HeaderImage from '../../Components/HeaderImage';
+import { Ionicons } from '@expo/vector-icons';
 
 export function Login() {
+
+    const[input, setInput] = useState('');
+    const[hidePass, setHidePass] = useState(true);
+    
     const navigation = useNavigation();
   
     function openScreen(){
@@ -46,8 +51,17 @@ export function Login() {
                         <View style={styles.info_caixa}>
                             <TextInput style={styles.info_caixa_text}
                             placeholder='Senha'
-                            secureTextEntry={true}>
+                            value= {input}
+                            onChangeText={ (texto) => setInput(texto)}
+                            secureTextEntry={hidePass}>
                             </TextInput>
+                            <TouchableOpacity style={styles.icon} onPress= { () => setHidePass(!hidePass) }>
+                                { hidePass ?
+                                    <Ionicons name= "eye-off" color="#000" size={25} />
+                                    :
+                                    <Ionicons name= "eye" color="#000" size={25} />
+                                }
+                            </TouchableOpacity>
                         </View>
                     </View>
                 </View>

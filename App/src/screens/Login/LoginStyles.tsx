@@ -24,6 +24,9 @@ const LoginStyles = StyleSheet.create({
         width: 285
     },
     info_caixa: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
         paddingTop: 12,
         paddingBottom: 12,
         borderBottomWidth: 1,
@@ -59,7 +62,13 @@ const LoginStyles = StyleSheet.create({
         fontWeight: '500',
         fontSize: 18,
         lineHeight: 28
-    }
+    },
+    icon: {
+        width: '15%',
+        height: 50,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
 })
 
 export default LoginStyles
