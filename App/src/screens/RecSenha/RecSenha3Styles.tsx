@@ -28,12 +28,6 @@ const RecSenha3Styles = StyleSheet.create({
         lineHeight: 24,
         fontWeight: '300',
         color: '#515151'
-        // fontSize: 15,
-        // justifyContent: 'center',
-        // marginTop: 25,
-        // alignItems: 'center',
-        // color: '#515151'
-
     },
     info_caixa: {
         display: 'flex',

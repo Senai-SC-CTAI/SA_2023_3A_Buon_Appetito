@@ -12,28 +12,24 @@ const RecSenha4Styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 35,
+        marginTop: 50,
         
     },
     titulo: {
         fontWeight: '500',
-        fontSize: 25, 
+        fontSize: 28, 
         marginTop: 46,
         marginBottom: 10,
         textAlign: 'center',
+        width: 285
     },
     titulo2: {
         textAlign: 'center',
         marginTop: 10,
-        fontSize: 15,
+        fontSize: 20,
         lineHeight: 24,
         fontWeight: '300',
         color: '#515151',
-        // fontSize: 15,
-        // justifyContent: 'center',
-        // marginTop: 25,
-        // alignItems: 'center',
-        // color: '#515151'
 
     },
     container_info: {
@@ -75,40 +71,19 @@ const RecSenha4Styles = StyleSheet.create({
         color: '#743C34',
         fontSize: 14
     },
-    btn: {
-        marginTop: 24,
-        textAlign: 'center',
-        alignItems: 'center',
-        justifyContent: 'center',
-        paddingTop: 8,
-        paddingBottom: 8,
-        backgroundColor: '#743C34',
-        borderRadius: 10,
-        width: '100%'
-    },
-    btn_text: {
-        color: 'white',
-        fontWeight: '500',
-        fontSize: 18,
-        lineHeight: 28
-    },
-
-      btn2:{
-        marginTop: 24,
-        textAlign: 'center',
-        alignItems: 'center',
-        justifyContent: 'center',
-        paddingTop: 8,
-        paddingBottom: 8,
-        borderRadius: 10,
-        width: '100%',
+    btn2:{
         borderWidth: 1,
         borderColor: '#A07964',
+        marginTop: 40,
+        marginRight: 50,
+        alignItems: 'center',
+        justifyContent: 'center',
         backgroundColor: '#F5EFEC',
-       
+        width: 130,
+        height: 40,
+        borderRadius: 10,
       },
-
-    btn_text2:{
+      btn_text2: {
         color: '#8F8F8F',
         fontWeight: '500',
         fontSize: 18,
@@ -116,7 +91,24 @@ const RecSenha4Styles = StyleSheet.create({
         display:'flex',
         flexDirection: 'row',
         justifyContent: 'space-between'
-      
+      },
+      btn: {
+        marginTop: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#743C34',
+        width: 130,
+        height: 40,
+        borderRadius: 10,
+    },
+      btn_text: {
+          color: 'white',
+          fontWeight: '500',
+          fontSize: 18,
+          lineHeight: 28,
+          display:'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between'
       },
 
     imageContainer: {

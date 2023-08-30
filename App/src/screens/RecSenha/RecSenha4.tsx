@@ -33,14 +33,12 @@ export function RecSenha4() {
 </View>
 
             <View style={styles.buttonContainer}>
-         <TouchableOpacity style={styles.btn} onPress={openScreenrecsenha3}>
-            <Text style={styles.btn_text}>Voltar</Text>
+         <TouchableOpacity style={styles.btn2} onPress={openScreenrecsenha3}>
+            <Text style={styles.btn_text2}>←   Voltar</Text>
         </TouchableOpacity>
 
-        <View style={styles.buttonSeparator}></View>
-
         <TouchableOpacity style={styles.btn} onPress={openScreen}>
-            <Text style={styles.btn_text}>Próximo</Text>
+            <Text style={styles.btn_text}>Próximo   →</Text>
         </TouchableOpacity>
             </View>
         </View>
