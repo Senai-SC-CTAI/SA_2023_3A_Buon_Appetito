@@ -1,9 +1,7 @@
 import React from 'react';
-import { MagnifyingGlassIcon } from 'react-native-heroicons/outline'
-import { Cog6ToothIcon } from 'react-native-heroicons/outline'
-import { PlusIcon } from 'react-native-heroicons/outline'
+import { MagnifyingGlassIcon, Cog6ToothIcon, PlusIcon } from 'react-native-heroicons/outline'
 
-import { View, SafeAreaView, Image, Text, TouchableOpacity, TextInput } from 'react-native';
+import { View, SafeAreaView, Text, TouchableOpacity, TextInput } from 'react-native';
 import styles from './HeaderStyles'
 
 export function Header() {

@@ -15,6 +15,9 @@ const ProdutoStyles = StyleSheet.create({
     nome:{
         fontSize: 22
     },
+    trashIcon:{
+      // marginBottom: 1
+    },
 
 // Styles editProduto
     containerEditModal: {

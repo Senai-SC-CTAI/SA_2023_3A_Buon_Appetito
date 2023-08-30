@@ -14,7 +14,6 @@ export function Cardapio() {
                 <Produto />
                 <Produto />
                 <Produto />
-                <Produto />
             </View>
         </ScrollView>
   );

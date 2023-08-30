@@ -31,7 +31,7 @@ export function RecSenha1() {
             <View style={styles.container2}>
                 <View style={{ flex: 1 }} />
                 <TouchableOpacity style={styles.btn} onPress={openScreen}>
-                    <Text style={styles.btn_text}>Próximo</Text>
+                    <Text style={styles.btn_text}>Próximo   →</Text>
                 </TouchableOpacity>
             </View>
         </View>

@@ -17,20 +17,16 @@ const RecSenha1Styles = StyleSheet.create({
     titulo: {
         fontWeight: '500',
         fontSize: 28, 
-        marginTop: 56
+        marginTop: 100
     },
     titulo2: {
         textAlign: 'center',
         marginTop: 24,
-        fontSize: 15,
+        fontSize: 20,
         lineHeight: 24,
-        fontWeight: '300',
-        color: '#515151'
-        // fontSize: 15,
-        // justifyContent: 'center',
-        // marginTop: 25,
-        // alignItems: 'center',
-        // color: '#515151'
+        fontWeight: '400',
+        color: '#515151',
+        width: 285
 
     },
     container_info: {
@@ -59,15 +55,14 @@ const RecSenha1Styles = StyleSheet.create({
         fontSize: 14
     },
     btn: {
-        marginTop: 24,
-        textAlign: 'center',
+        marginTop: 40,
+        marginRight: 50,
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: 8,
-        paddingBottom: 8,
         backgroundColor: '#743C34',
+        width: 130,
+        height: 40,
         borderRadius: 10,
-        width: '150%'
     },
     btn_text: {
         color: 'white',

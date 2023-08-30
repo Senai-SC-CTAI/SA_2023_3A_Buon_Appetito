@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { TrashIcon } from 'react-native-heroicons/outline'
+
 
 import { View, Image, Text, TouchableOpacity, Modal, TextInput } from 'react-native';
 import styles from './ProdutoStyles'
@@ -79,7 +81,7 @@ export function Produto() {
                     <Text style={styles.nome}>Produto</Text>
                     <TouchableOpacity
                     onPress={() => setExcluilVisible(true)}>
-                        <Text style={styles.nome}>Excluir</Text>
+                    <TrashIcon  color={'red'} size={30}/>
                     </TouchableOpacity>
                 </View>
             </TouchableOpacity>
