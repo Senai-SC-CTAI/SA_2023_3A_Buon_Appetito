@@ -95,7 +95,7 @@ const ProdutoStyles = StyleSheet.create({
         fontSize: 18
       },
 
-// Style ExcluiProduto
+// Styles ExcluiProduto
       containerExcluiModal:{
         flex: 1,
         justifyContent: 'center',
