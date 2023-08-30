@@ -16,16 +16,13 @@ const ProdutoStyles = StyleSheet.create({
         fontSize: 22
     },
 
-
-
-
-
-    containerModal: {
+// Styles editProduto
+    containerEditModal: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
       },
-      modalView: {
+      modalEditView: {
         backgroundColor: 'white',
         borderRadius: 10,
         width: '80%',
@@ -40,7 +37,7 @@ const ProdutoStyles = StyleSheet.create({
         shadowRadius: 4,
         elevation: 5,
       },
-      modalTitle: {
+      modalEditTitle: {
         fontWeight: '400',
         fontSize: 26,
         marginTop: 40,
@@ -96,8 +93,72 @@ const ProdutoStyles = StyleSheet.create({
         color: 'white',
         fontWeight: '500',
         fontSize: 18
-      }
+      },
 
+// Style ExcluiProduto
+      containerExcluiModal:{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+      },
+      modalExcluiView:{
+        backgroundColor: 'white',
+        borderRadius: 10,
+        width: '80%',
+        height: '20%',
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: {
+          width: 0,
+          height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
+        elevation: 5,
+      },
+      modalExcluiPosition:{
+        marginHorizontal: 6,
+        marginTop: 20
+      },
+      modalExcluiTitle:{
+        fontSize: 26,
+        fontWeight: '400',
+        color: '#151515',
+        textAlign: 'center'
+      },
+      btnExcluiSimNao:{
+        marginTop: 20,
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+      },
+      btnExcluiSim:{
+        borderWidth: 1,
+        borderColor: '#A07964',
+        height: 40,
+        width: 86,
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center'
+      },
+      btnExcluiTextSim:{
+        fontSize: 18,
+        fontWeight: '500',
+        color: '#8F8F8F'
+      },
+      btnExcluiNao:{
+        backgroundColor: '#743C34',
+        height: 40,
+        width: 86,
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center'
+      },
+      btnExcluiTextNao:{
+        fontSize: 18,
+        fontWeight: '500',
+        color: 'white'
+      }
 })
 
 export default ProdutoStyles

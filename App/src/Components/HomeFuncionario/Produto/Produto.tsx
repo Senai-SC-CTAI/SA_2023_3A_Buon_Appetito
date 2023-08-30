@@ -6,6 +6,7 @@ import styles from './ProdutoStyles'
 
 export function Produto() {
       const [editlVisible, setEditlVisible] = useState(false);
+      const [excluilVisible, setExcluilVisible] = useState(false);
     return (
         <View>
 
@@ -17,9 +18,9 @@ export function Produto() {
             onRequestClose={() => {
             setEditlVisible(!editlVisible);
             }}>
-                <View style={styles.containerModal}>
-                    <View style={styles.modalView}>
-                        <Text style={styles.modalTitle}>Editar Produto</Text>
+                <View style={styles.containerEditModal}>
+                    <View style={styles.modalEditView}>
+                        <Text style={styles.modalEditTitle}>Editar Produto</Text>
                         <TouchableOpacity>
                             <Image style={styles.modalImage}
                             source={require('../../../../assets/CookieLapisSA.png')}
@@ -42,34 +43,31 @@ export function Produto() {
                 </View>
             </Modal>
 
+            {/* Modal para excluir produto */}
             <Modal
             animationType="slide"
             transparent={true}
-            visible={editlVisible}
+            visible={excluilVisible}
             onRequestClose={() => {
-            setEditlVisible(!editlVisible);
+            setExcluilVisible(!excluilVisible);
             }}>
-                <View style={styles.centeredView}>
-                    <View style={styles.modalView}>
-                        <Text style={styles.modalTitle}>Editar Produto</Text>
-                        <TouchableOpacity>
-                            <Image style={styles.modalImage}
-                            source={require('../../../../assets/CookieLapisSA.png')}
-                            />
-                        </TouchableOpacity>
-                        <View style={styles.modalContainer}>
-                                <Text style={styles.containerText}>Nome</Text>
-                                <TextInput style={styles.containerCaixa}></TextInput>
-                                <Text style={styles.containerText}>Informações nutricionais</Text>
-                                <TextInput style={styles.containerCaixaInfo}></TextInput>
-                                <Text style={styles.containerText}>Preço</Text>
-                                <TextInput style={styles.containerCaixa}></TextInput>
+                <View style={styles.containerExcluiModal}>
+                    <View style={styles.modalExcluiView}>
+                        <View style={styles.modalExcluiPosition}>
+                            <Text style={styles.modalExcluiTitle}>Deseja exluir este produto?</Text>
+                            <View style={styles.btnExcluiSimNao}>
+                                <TouchableOpacity
+                                style={[styles.btnExcluiSim]}
+                                onPress={() => setExcluilVisible(!excluilVisible)}>
+                                    <Text style={styles.btnExcluiTextSim}>Excluir</Text>
+                                </TouchableOpacity>
+                                <TouchableOpacity
+                                style={[styles.btnExcluiNao]}
+                                onPress={() => setExcluilVisible(!excluilVisible)}>
+                                    <Text style={styles.btnExcluiTextNao}>Não</Text>
+                                </TouchableOpacity>
+                            </View>
                         </View>
-                        <TouchableOpacity
-                        style={[styles.btnEditar]}
-                        onPress={() => setEditlVisible(!editlVisible)}>
-                            <Text style={styles.btnEditarText}>Editar</Text>
-                        </TouchableOpacity>
                     </View>
                 </View>
             </Modal>
@@ -79,7 +77,8 @@ export function Produto() {
                 <View style={styles.container}>
                     <Text style={styles.nome}>Imagem</Text>
                     <Text style={styles.nome}>Produto</Text>
-                    <TouchableOpacity>
+                    <TouchableOpacity
+                    onPress={() => setExcluilVisible(true)}>
                         <Text style={styles.nome}>Excluir</Text>
                     </TouchableOpacity>
                 </View>
