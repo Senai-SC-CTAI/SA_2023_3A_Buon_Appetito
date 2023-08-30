@@ -4,7 +4,15 @@ import { MagnifyingGlassIcon, Cog6ToothIcon, PlusIcon } from 'react-native-heroi
 import { View, SafeAreaView, Text, TouchableOpacity, TextInput } from 'react-native';
 import styles from './HeaderStyles'
 
+import { useNavigation } from '@react-navigation/native';
+
 export function Header() {
+    const navigation = useNavigation()
+
+    function openAddProduto(){
+        navigation.navigate('addproduto')
+    }
+
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.text}>
@@ -29,7 +37,8 @@ export function Header() {
                 <TouchableOpacity style={styles.settings}>
                     <Cog6ToothIcon size={36} color={'white'}/>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.settings}>
+                <TouchableOpacity style={styles.settings}
+                onPress={openAddProduto}>
                     <PlusIcon size={36} color={'white'}/> 
                 </TouchableOpacity>
             </View>

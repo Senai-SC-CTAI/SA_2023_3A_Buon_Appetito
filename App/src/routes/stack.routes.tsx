@@ -12,6 +12,7 @@ import { RecSenha2 } from '../screens/RecSenha/RecSenha2';
 import { RecSenha3 } from '../screens/RecSenha/RecSenha3';
 import { RecSenha4 } from '../screens/RecSenha/RecSenha4';
 import { HomeFunc } from '../screens/HomeFuncionario/HomeFunc';
+import { AddProduto } from "../screens/AddProduto/AddProduto";
 
 export function StackRoutes(){
     return(
@@ -88,6 +89,14 @@ export function StackRoutes(){
                     headerShown: false
                 }}
                 component={HomeFunc}
+            />
+            <Screen
+                name='addproduto'
+                options={{
+                    title: 'AddProduto',
+                    headerShown: false
+                }}
+                component={AddProduto}
             />
         </Navigator>
     )

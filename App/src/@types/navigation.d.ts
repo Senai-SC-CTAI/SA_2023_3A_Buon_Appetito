@@ -6,6 +6,7 @@ export declare global{
             login: undefined;
             home: undefined;
             homefunc: undefined;
+            addproduto: undefined;
             recsenha1: undefined;
             recsenha2: undefined;
             recsenha3: undefined;
