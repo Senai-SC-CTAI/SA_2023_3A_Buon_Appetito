@@ -12,27 +12,21 @@ const RecSenha2Styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginTop: 35,
-        
     },
     titulo: {
         fontWeight: '500',
         fontSize: 28, 
-        marginTop: 56
+        marginTop: 100
     },
     titulo2: {
         textAlign: 'center',
         marginTop: 24,
-        fontSize: 15,
+        fontSize: 20,
         lineHeight: 24,
-        fontWeight: '300',
+        fontWeight: '400',
         color: '#515151',
         marginBottom: 24,
-        // fontSize: 15,
-        // justifyContent: 'center',
-        // marginTop: 25,
-        // alignItems: 'center',
-        // color: '#515151'
-
+        width: 285
     },
     container_info: {
         gap: 16,
@@ -48,59 +42,33 @@ const RecSenha2Styles = StyleSheet.create({
     info_caixa_text: {
         fontSize: 18
     },
-    container2: {
-        justifyContent: 'center', 
-        alignItems: 'center', 
-        marginBottom: 19, 
-     
-      },
-    
-      buttonContainer: {
-        flexDirection: 'row', 
-        justifyContent: 'center',
-      },
-
-      buttonSeparator: {
-        width: 30, 
-      },
-
     recSenha: {
-        marginTop: 24
+      marginTop: 24
     },
     recSenha_text: {
-        color: '#743C34',
-        fontSize: 14
+      color: '#743C34',
+      fontSize: 14
     },
+    container2: {
+      marginTop: 20,
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-between'
 
-
-    btn: {
-        marginTop: 45,
-        textAlign: 'center',
-        alignItems: 'center',
-        justifyContent: 'center',
-        paddingTop: 8,
-        paddingBottom: 8,
-        backgroundColor: '#743C34',
-        borderRadius: 10,
-        width: '100%'
-    },
-
+      },
     btn2:{
-      marginTop: 45,
-      textAlign: 'center',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      paddingTop: 8,
-      paddingBottom: 8,
       borderWidth: 1,
       borderColor: '#A07964',
+      marginTop: 40,
+      marginRight: 50,
+      alignItems: 'center',
+      justifyContent: 'center',
       backgroundColor: '#F5EFEC',
+      width: 130,
+      height: 40,
       borderRadius: 10,
-      width: '100%',
-      display:'flex',
     },
-
-    btn_text2:{
+    btn_text2: {
       color: '#8F8F8F',
       fontWeight: '500',
       fontSize: 18,
@@ -108,9 +76,16 @@ const RecSenha2Styles = StyleSheet.create({
       display:'flex',
       flexDirection: 'row',
       justifyContent: 'space-between'
-    
     },
-
+    btn: {
+      marginTop: 40,
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: '#743C34',
+      width: 130,
+      height: 40,
+      borderRadius: 10,
+  },
     btn_text: {
         color: 'white',
         fontWeight: '500',
@@ -120,7 +95,6 @@ const RecSenha2Styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between'
     },
-    
     codeContainer: {
         flexDirection: 'row',
         alignItems: 'center',
@@ -150,7 +124,6 @@ const RecSenha2Styles = StyleSheet.create({
         justifyContent: 'center',
         marginTop: 35,
       },
-
        icon: {
         width: '15%',
         height: 50, 

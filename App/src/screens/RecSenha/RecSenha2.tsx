@@ -39,8 +39,7 @@ export function RecSenha2() {
             <View style={styles.container}>
                 <Text style={styles.titulo}>Recuperar Senha</Text>
                 <Text style={styles.titulo2}>
-                    Digite o código que enviamos <br />
-                    para o seu email
+                    Digite o código que enviamos para o seu email
                 </Text>
 
                 <View style={styles.codeContainer}>
@@ -71,17 +70,12 @@ export function RecSenha2() {
             </View>
 
             <View style={styles.container2}>
-                <View style={styles.buttonContainer}>
                     <TouchableOpacity style={styles.btn2} onPress={openScreenrecsenha1}>
-                        <Text style={styles.btn_text2}>Voltar</Text>
+                        <Text style={styles.btn_text2}>←   Voltar</Text>
                     </TouchableOpacity>
-
-                    <View style={styles.buttonSeparator}></View>
-
                     <TouchableOpacity style={styles.btn} onPress={openScreen}>
-                        <Text style={styles.btn_text}>Próximo</Text>
+                        <Text style={styles.btn_text}>Próximo   →</Text>
                     </TouchableOpacity>
-                </View>
             </View>
         </View>
     );
