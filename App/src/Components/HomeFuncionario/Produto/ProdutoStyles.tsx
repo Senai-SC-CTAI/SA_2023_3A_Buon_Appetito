@@ -20,7 +20,7 @@ const ProdutoStyles = StyleSheet.create({
 
 
 
-    centeredView: {
+    containerModal: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
@@ -40,14 +40,6 @@ const ProdutoStyles = StyleSheet.create({
         shadowRadius: 4,
         elevation: 5,
       },
-      button: {
-        borderRadius: 20,
-        padding: 10,
-        elevation: 2,
-      },
-      buttonOpen: {
-        backgroundColor: '#F194FF',
-      },
       modalTitle: {
         fontWeight: '400',
         fontSize: 26,
@@ -60,16 +52,16 @@ const ProdutoStyles = StyleSheet.create({
         height: 130,
         marginTop: 20
       },
-      modalContainer:{
+      modalEdit:{
         width: '80%',
       },
-      containerText:{
+      editText:{
         marginTop: 20,
         color: '#414141',
         fontSize: 18,
         fontWeight: '400',
       },
-      containerCaixa:{
+      editCaixa:{
         marginTop: 6,
         backgroundColor: '#F5EFEC',
         borderWidth: 1,
@@ -81,7 +73,7 @@ const ProdutoStyles = StyleSheet.create({
         flexWrap: 'wrap'
         
       },
-      containerCaixaInfo:{
+      editCaixaInfo:{
         marginTop: 6,
         backgroundColor: '#F5EFEC',
         borderWidth: 1,
@@ -105,7 +97,6 @@ const ProdutoStyles = StyleSheet.create({
         fontWeight: '500',
         fontSize: 18
       }
-
 
 })
 

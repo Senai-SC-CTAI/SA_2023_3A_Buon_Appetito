@@ -9,6 +9,7 @@ export function Produto() {
     return (
         <View>
 
+            {/* Modal para editar produto */}
             <Modal
             animationType="slide"
             transparent={true}
@@ -16,9 +17,38 @@ export function Produto() {
             onRequestClose={() => {
             setEditlVisible(!editlVisible);
             }}>
+                <View style={styles.containerModal}>
+                    <View style={styles.modalView}>
+                        <Text style={styles.modalTitle}>Editar Produto</Text>
+                        <TouchableOpacity>
+                            <Image style={styles.modalImage}
+                            source={require('../../../../assets/CookieLapisSA.png')}
+                            />
+                        </TouchableOpacity>
+                        <View style={styles.modalEdit}>
+                                <Text style={styles.editText}>Nome</Text>
+                                <TextInput style={styles.editCaixa}></TextInput>
+                                <Text style={styles.editText}>Informações nutricionais</Text>
+                                <TextInput style={styles.editCaixaInfo}></TextInput>
+                                <Text style={styles.editText}>Preço</Text>
+                                <TextInput style={styles.editCaixa}></TextInput>
+                        </View>
+                        <TouchableOpacity
+                        style={[styles.btnEditar]}
+                        onPress={() => setEditlVisible(!editlVisible)}>
+                            <Text style={styles.btnEditarText}>Editar</Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+            </Modal>
 
-
-                
+            <Modal
+            animationType="slide"
+            transparent={true}
+            visible={editlVisible}
+            onRequestClose={() => {
+            setEditlVisible(!editlVisible);
+            }}>
                 <View style={styles.centeredView}>
                     <View style={styles.modalView}>
                         <Text style={styles.modalTitle}>Editar Produto</Text>
@@ -29,22 +59,12 @@ export function Produto() {
                         </TouchableOpacity>
                         <View style={styles.modalContainer}>
                                 <Text style={styles.containerText}>Nome</Text>
-                                <TextInput style={styles.containerCaixa}>
-
-                                </TextInput>
-
+                                <TextInput style={styles.containerCaixa}></TextInput>
                                 <Text style={styles.containerText}>Informações nutricionais</Text>
-                                <TextInput style={styles.containerCaixaInfo}>
-
-                                </TextInput>
-
+                                <TextInput style={styles.containerCaixaInfo}></TextInput>
                                 <Text style={styles.containerText}>Preço</Text>
-                                <TextInput style={styles.containerCaixa}>
-
-                                </TextInput>
+                                <TextInput style={styles.containerCaixa}></TextInput>
                         </View>
-
-
                         <TouchableOpacity
                         style={[styles.btnEditar]}
                         onPress={() => setEditlVisible(!editlVisible)}>
