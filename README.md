@@ -1,7 +1,7 @@
 <h1>Francisca Clara</h1>
 <h3>Tela Cadastro de Usuário</h3>
 
-- [ ] - RF1 - O aluno poderá se cadastrar no app
+- [x] - RF1 - O aluno poderá se cadastrar no app
 
 <h1>Julia Wenzel</h1>
 <h3>Tela Login de Usuário</h3>
