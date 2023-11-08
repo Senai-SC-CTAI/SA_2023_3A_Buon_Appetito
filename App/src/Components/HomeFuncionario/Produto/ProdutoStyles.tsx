@@ -28,8 +28,8 @@ const ProdutoStyles = StyleSheet.create({
       modalEditView: {
         backgroundColor: 'white',
         borderRadius: 10,
-        width: '80%',
-        height: '82%',
+        width: '84%',
+        height: '88%',
         alignItems: 'center',
         shadowColor: '#000',
         shadowOffset: {
@@ -86,7 +86,7 @@ const ProdutoStyles = StyleSheet.create({
       },
       btnEditar: {
         backgroundColor: '#743C34',
-        marginTop: 40,
+        marginTop: 30,
         width: '80%',
         alignItems: 'center',
         borderRadius: 10,

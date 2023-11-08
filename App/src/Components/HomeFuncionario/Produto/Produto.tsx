@@ -35,6 +35,8 @@ export function Produto() {
                                 <TextInput style={styles.editCaixaInfo}></TextInput>
                                 <Text style={styles.editText}>Preço</Text>
                                 <TextInput style={styles.editCaixa}></TextInput>
+                                <Text style={styles.editText}>Dia da Semana</Text>
+                                <TextInput style={styles.editCaixa}></TextInput>
                         </View>
                         <TouchableOpacity
                         style={[styles.btnEditar]}
