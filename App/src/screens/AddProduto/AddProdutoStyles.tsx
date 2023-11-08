@@ -11,7 +11,7 @@ const AddProduto = StyleSheet.create({
   modalEditTitle: {
     fontWeight: '400',
     fontSize: 26,
-    marginTop: 40,
+    marginTop: 30,
     color: '#151515'
   },
   modalImage:{
