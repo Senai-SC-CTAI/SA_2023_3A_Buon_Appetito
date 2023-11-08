@@ -29,7 +29,7 @@ const WelcomeStyles = StyleSheet.create({
     },
     botoes: {
         gap: 24,
-        marginTop: 56
+        marginTop: 30
     },
     cadastro: {
         textAlign: 'center',

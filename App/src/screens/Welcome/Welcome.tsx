@@ -36,8 +36,7 @@ export function Welcome() {
             </View>
 
             <Text style={styles.descricao}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae augue ipsum. 
-            Curabitur sed auctor urna. Nam ut nulla in leo vulputate interdum.
+            Apresentamos nosso aplicativo de cantina escolar, uma solução inovadora para otimizar a gestão da cantina, mostramos o cardápio para tornar a experiência da cantina mais eficiente e agradável.
             </Text>
 
             <View style={styles.botoes}>
