@@ -161,7 +161,37 @@ const ProdutoStyles = StyleSheet.create({
         fontSize: 18,
         fontWeight: '500',
         color: 'white'
-      }
+      },
+
+      editCaixaPicker: {
+        marginTop: 6,
+        backgroundColor: '#FEFEFE',
+        borderWidth: 1,
+        borderColor: "#D5D5D5",
+        borderRadius: 10,
+        height: 40,
+        paddingHorizontal: 10,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+      },
+
+      btnClose: {
+        position: 'absolute',
+        top: 10,
+        right: 10,
+        backgroundColor: '#fff', // Background do botão X
+        borderRadius: 50, // Deixar o botão circular
+        padding: 5,
+        zIndex: 1, // Adicione esse estilo para garantir que o botão esteja acima do conteúdo do modal
+      },
+    
+      btnCloseText: {
+        fontSize: 20,
+        color: '#402218',
+        
+      },
+    
 })
 
 export default ProdutoStyles
