@@ -90,6 +90,19 @@ const AddProduto = StyleSheet.create({
     lineHeight: 28,
   },
 
+  editCaixaPicker: {
+    marginTop: 6,
+    backgroundColor: '#FEFEFE',
+    borderWidth: 1,
+    borderColor: "#D5D5D5",
+    borderRadius: 10,
+    height: 40,
+    paddingHorizontal: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+
 })
 
 export default AddProduto
