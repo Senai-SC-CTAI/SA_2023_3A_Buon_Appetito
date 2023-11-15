@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useState} from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, TextInput, Button, Alert, TouchableOpacity,  } from 'react-native';
+import { StyleSheet, Text, View, Image, TextInput, Button, Alert, TouchableOpacity, Picker } from 'react-native';
 import styles from './AddProdutoStyles';
 
 import { useNavigation } from '@react-navigation/native';
 
 export function AddProduto() {
   const navigation = useNavigation()
-
+  const [selectedDay, setSelectedDay] = useState(''); // Novo estado para armazenar a opção selecionada no dropdown
   function openScreenHomeFunc(){
     navigation.navigate('homefunc')
   }
@@ -28,7 +28,18 @@ export function AddProduto() {
                 <Text style={styles.editText}>Preço</Text>
                 <TextInput style={styles.editCaixa}></TextInput>
                 <Text style={styles.editText}>Dia da Semana</Text>
-                <TextInput style={styles.editCaixa}></TextInput>
+                <Picker
+                  style={styles.editCaixa}
+                  selectedValue={selectedDay}
+                  onValueChange={(itemValue, itemIndex) => setSelectedDay(itemValue)}
+                >
+                  <Picker.Item label="Selecione o dia" value="" />
+                  <Picker.Item label="Segunda" value="segunda" />
+                  <Picker.Item label="Terça" value="terca" />
+                  <Picker.Item label="Quarta" value="quarta" />
+                  <Picker.Item label="Quinta" value="quinta" />
+                  <Picker.Item label="Sexta" value="sexta" />
+                </Picker>
         </View>
 
         <View style={styles.btnDivide}>
