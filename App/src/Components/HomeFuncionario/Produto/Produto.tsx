@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { TrashIcon } from 'react-native-heroicons/outline'
 
 
-import { View, Image, Text, TouchableOpacity, Modal, TextInput } from 'react-native';
+import { View, Image, Text, TouchableOpacity, Modal, TextInput, Button, Alert, Picker  } from 'react-native';
 import styles from './ProdutoStyles'
 
 
 export function Produto() {
-      const [editlVisible, setEditlVisible] = useState(false);
+      const [editVisible, setEditVisible] = useState(false);
       const [excluilVisible, setExcluilVisible] = useState(false);
+      const [selectedDay, setSelectedDay] = useState(''); // Novo estado para armazenar a opção selecionada no dropdown
     return (
         <View>
 
@@ -16,12 +17,18 @@ export function Produto() {
             <Modal
             animationType="slide"
             transparent={true}
-            visible={editlVisible}
+            visible={editVisible}
             onRequestClose={() => {
-            setEditlVisible(!editlVisible);
+            setEditVisible(!editVisible);
             }}>
                 <View style={styles.containerEditModal}>
                     <View style={styles.modalEditView}>
+                    <TouchableOpacity
+              style={styles.btnClose}
+              onPress={() => setEditVisible(!editVisible)}
+            >
+              <Text style={styles.btnCloseText}>X</Text>
+            </TouchableOpacity>
                         <Text style={styles.modalEditTitle}>Editar Produto</Text>
                         <TouchableOpacity>
                             <Image style={styles.modalImage}
@@ -36,11 +43,22 @@ export function Produto() {
                                 <Text style={styles.editText}>Preço</Text>
                                 <TextInput style={styles.editCaixa}></TextInput>
                                 <Text style={styles.editText}>Dia da Semana</Text>
-                                <TextInput style={styles.editCaixa}></TextInput>
+                                <Picker
+                                style={styles.editCaixa}
+                                selectedValue={selectedDay}
+                                onValueChange={(itemValue, itemIndex) => setSelectedDay(itemValue)}
+                                >
+                                <Picker.Item label="Selecione o dia" value="" />
+                                <Picker.Item label="Segunda" value="segunda" />
+                                <Picker.Item label="Terça" value="terca" />
+                                <Picker.Item label="Quarta" value="quarta" />
+                                <Picker.Item label="Quinta" value="quinta" />
+                                <Picker.Item label="Sexta" value="sexta" />
+                                </Picker>
                         </View>
                         <TouchableOpacity
                         style={[styles.btnEditar]}
-                        onPress={() => setEditlVisible(!editlVisible)}>
+                        onPress={() => setEditVisible(!editVisible)}>
                             <Text style={styles.btnEditarText}>Editar</Text>
                         </TouchableOpacity>
                     </View>
@@ -77,7 +95,7 @@ export function Produto() {
             </Modal>
 
             <TouchableOpacity
-            onPress={() => setEditlVisible(true)}>
+            onPress={() => setEditVisible(true)}>
                 <View style={styles.container}>
                     <Text style={styles.nome}>Imagem</Text>
                     <Text style={styles.nome}>Produto</Text>
