@@ -209,12 +209,13 @@ export default function Funcionario() {
           <div>
             <Delete />
           </div>
-          <div className='bg-white col-span-5 grid grid-cols-[1fr,1fr,1fr,70px,70px] p-2 border-b-[#D5D5D5] border-b text-[#606060]'>
+        </div>
+        <div className='bg-white col-span-5 grid grid-cols-[1fr,1fr,1fr,70px,70px] p-2 border-b-[#D5D5D5] border-b text-[#606060] mt-1'>
           <p >
-            Lucas S. Aguiar
+            Valentina S. Aguiar
           </p>
           <p>
-            lucas.sa@gmail.com
+            valentina.sa@gmail.com
           </p>
           <p>
             +55 (48) 99456-7264
@@ -222,14 +223,16 @@ export default function Funcionario() {
           <div>
             <Edit/>
           </div>
+          <div>
             <Delete />
+          </div>
         </div>
-        <div className='bg-white col-span-5 grid grid-cols-[1fr,1fr,1fr,70px,70px] p-2 border-b-[#D5D5D5] border-b text-[#606060]'>
+        <div className='bg-white col-span-5 grid grid-cols-[1fr,1fr,1fr,70px,70px] p-2 border-b-[#D5D5D5] border-b text-[#606060] mt-1'>
           <p >
-            Lucas S. Aguiar
+            Valentina S. Aguiar
           </p>
           <p>
-            lucas.sa@gmail.com
+            valentina.sa@gmail.com
           </p>
           <p>
             +55 (48) 99456-7264
@@ -237,14 +240,16 @@ export default function Funcionario() {
           <div>
             <Edit/>
           </div>
+          <div>
             <Delete />
+          </div>
         </div>
-        <div className='bg-white col-span-5 grid grid-cols-[1fr,1fr,1fr,70px,70px] p-2 border-b-[#D5D5D5] border-b text-[#606060]'>
+        <div className='bg-white col-span-5 grid grid-cols-[1fr,1fr,1fr,70px,70px] p-2 border-b-[#D5D5D5] border-b text-[#606060] mt-1'>
           <p >
-            Lucas S. Aguiar
+            Valentina S. Aguiar
           </p>
           <p>
-            lucas.sa@gmail.com
+            valentina.sa@gmail.com
           </p>
           <p>
             +55 (48) 99456-7264
@@ -252,14 +257,16 @@ export default function Funcionario() {
           <div>
             <Edit/>
           </div>
+          <div>
             <Delete />
+          </div>
         </div>
-        <div className='bg-white col-span-5 grid grid-cols-[1fr,1fr,1fr,70px,70px] p-2 border-b-[#D5D5D5] border-b text-[#606060]'>
+        <div className='bg-white col-span-5 grid grid-cols-[1fr,1fr,1fr,70px,70px] p-2 border-b-[#D5D5D5] border-b text-[#606060] mt-1'>
           <p >
-            Lucas S. Aguiar
+            Valentina S. Aguiar
           </p>
           <p>
-            lucas.sa@gmail.com
+            valentina.sa@gmail.com
           </p>
           <p>
             +55 (48) 99456-7264
@@ -267,14 +274,16 @@ export default function Funcionario() {
           <div>
             <Edit/>
           </div>
+          <div>
             <Delete />
+          </div>
         </div>
-        <div className='bg-white col-span-5 grid grid-cols-[1fr,1fr,1fr,70px,70px] p-2 border-b-[#D5D5D5] border-b text-[#606060]'>
+        <div className='bg-white col-span-5 grid grid-cols-[1fr,1fr,1fr,70px,70px] p-2 border-b-[#D5D5D5] border-b text-[#606060] mt-1'>
           <p >
-            Lucas S. Aguiar
+            Valentina S. Aguiar
           </p>
           <p>
-            lucas.sa@gmail.com
+            valentina.sa@gmail.com
           </p>
           <p>
             +55 (48) 99456-7264
@@ -282,14 +291,16 @@ export default function Funcionario() {
           <div>
             <Edit/>
           </div>
+          <div>
             <Delete />
+          </div>
         </div>
-        <div className='bg-white col-span-5 grid grid-cols-[1fr,1fr,1fr,70px,70px] p-2 border-b-[#D5D5D5] border-b text-[#606060]'>
+        <div className='bg-white col-span-5 grid grid-cols-[1fr,1fr,1fr,70px,70px] p-2 border-b-[#D5D5D5] border-b text-[#606060] mt-1'>
           <p >
-            Lucas S. Aguiar
+            Valentina S. Aguiar
           </p>
           <p>
-            lucas.sa@gmail.com
+            valentina.sa@gmail.com
           </p>
           <p>
             +55 (48) 99456-7264
@@ -297,14 +308,16 @@ export default function Funcionario() {
           <div>
             <Edit/>
           </div>
+          <div>
             <Delete />
+          </div>
         </div>
-        <div className='bg-white col-span-5 grid grid-cols-[1fr,1fr,1fr,70px,70px] p-2 border-b-[#D5D5D5] border-b text-[#606060]'>
+        <div className='bg-white col-span-5 grid grid-cols-[1fr,1fr,1fr,70px,70px] p-2 border-b-[#D5D5D5] border-b text-[#606060] mt-1'>
           <p >
-            Lucas S. Aguiar
+            Valentina S. Aguiar
           </p>
           <p>
-            lucas.sa@gmail.com
+            valentina.sa@gmail.com
           </p>
           <p>
             +55 (48) 99456-7264
@@ -312,38 +325,9 @@ export default function Funcionario() {
           <div>
             <Edit/>
           </div>
-            <Delete />
-        </div>
-        <div className='bg-white col-span-5 grid grid-cols-[1fr,1fr,1fr,70px,70px] p-2 border-b-[#D5D5D5] border-b text-[#606060]'>
-          <p >
-            Lucas S. Aguiar
-          </p>
-          <p>
-            lucas.sa@gmail.com
-          </p>
-          <p>
-            +55 (48) 99456-7264
-          </p>
           <div>
-            <Edit/>
-          </div>
             <Delete />
-        </div>
-        <div className='bg-white col-span-5 grid grid-cols-[1fr,1fr,1fr,70px,70px] p-2 border-b-[#D5D5D5] border-b text-[#606060]'>
-          <p >
-            Lucas S. Aguiar
-          </p>
-          <p>
-            lucas.sa@gmail.com
-          </p>
-          <p>
-            +55 (48) 99456-7264
-          </p>
-          <div>
-            <Edit/>
           </div>
-            <Delete />
-        </div>
         </div>
 
       </section>
